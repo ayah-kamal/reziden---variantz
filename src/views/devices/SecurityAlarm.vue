@@ -1,10 +1,9 @@
-<template >
-    
+<template>
 
-<CRow class="rowStyle">
+    <CRow class="rowStyle">
         <CCard>
-          <h4 class = "title">Curtains</h4>
-        <img  class = "deviceImage" src="curtains.jpeg" alt="">
+          <h4 class = "title">Security Alarm</h4>
+        <img  class = "deviceImage" src="SecurityAlarm.jpg" alt="">
   
    <div class="onoffswitch">
     <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch3" tabindex="0" checked>
@@ -18,4 +17,3 @@
 </CCard>
 </CRow>
 </template>
-

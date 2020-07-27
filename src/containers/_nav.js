@@ -131,9 +131,9 @@ export default [
       },
       {
         _name: 'CSidebarNavItem',
-        name: 'Entrance',
-        to: '/security/entrance',
-        icon: 'cil-door'
+        name: 'Safety',
+        to: '/security/Safety',
+        icon: 'cil-settings'
       },
       {
         _name: 'CSidebarNavItem',

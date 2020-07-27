@@ -1,9 +1,9 @@
 <template>
-    <div>
-        <!-- <CRow class="rowStyle"> -->
+
+      <CRow class="rowStyle">
         <CCard>
           <h4 class = "title">Lighting</h4>
-        <img class = "deviceImage" src="https://gloimg.gbtcdn.com/images/pdm-product-pic/Electronic/2018/07/07/source-img/20180707112740_17931.jpg_500x500.jpg" alt="">
+        <img class = "deviceImage" src="lighting.jpeg" alt="">
   
    <div class="onoffswitch">
     <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch1" tabindex="0" checked>
@@ -14,6 +14,6 @@
 </div>
 
 </CCard>
-<!-- </CRow> -->
-    </div>
+</CRow>
 </template>
+

@@ -28,9 +28,9 @@
                     </CCol>
                     <CCol col="6" class="text-right">
                       <CButton color="link" class="px-0">Forgot password?</CButton>
-                      <CButton color="link" class="d-lg-none" >Register now!</CButton>
+                      <CButton color="link" class="d-lg-none">Register now!</CButton>
                     </CCol>
-                   </CRow> 
+                  </CRow>
                 </CForm>
               </CCardBody>
             </CCard>
@@ -41,9 +41,11 @@
               body-wrapper
             >
               <CCardBody>
-                <h2>Sign up</h2>
-                <p>Don't have an account? </p>
-                <CButton
+     
+<br><br>      
+
+
+          <CButton
                   color="light"
                   variant="outline"
                   size="lg"
@@ -64,5 +66,4 @@
 export default {
   name: 'Login'
 }
-
 </script>

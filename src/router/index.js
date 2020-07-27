@@ -66,7 +66,7 @@ const MasterBedroom = () => import('@/views/Rooms/MasterBedroom')
 //+
 //Views - Security
 const Cameras = () => import('@/views/Security/Cameras')
-const Entrance = () => import('@/views/Security/Entrance')
+const Safety = () => import('@/views/Security/Safety')
 const Garage = () => import('@/views/Security/Garage')
  
 // Users
@@ -84,6 +84,10 @@ export default new Router({
 
 function configRoutes () {
   return [
+
+    
+
+    
     {
       path: '/',
       redirect: '/dashboard',
@@ -95,6 +99,9 @@ function configRoutes () {
           name: 'Dashboard',
           component: Dashboard
         }, 
+
+
+
         {
           path: '/Rooms',
           name: 'Rooms',
@@ -153,9 +160,9 @@ function configRoutes () {
             component: Cameras
           },
           {
-            path: 'entrance',
-            name: 'Entrance',
-            component: Entrance 
+            path: 'Safety',
+            name: 'Safety',
+            component: Safety 
           },
           {
             path: 'garage',

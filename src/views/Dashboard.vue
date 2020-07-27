@@ -456,20 +456,22 @@
 </template>
 
 <script>
-//import MainChartExample from './charts/MainChartExample'
-//import WidgetsDropdown from './widgets/WidgetsDropdown'
-//import WidgetsBrand from './widgets/WidgetsBrand'
+import MainChartExample from './charts/MainChartExample'
+import WidgetsDropdown from './widgets/WidgetsDropdown'
+import WidgetsBrand from './widgets/WidgetsBrand'
 import welcomeMessage from './Welcome/WelcomeMessage'
 import houseImage from './Welcome/HouseImage'
+import LightDevice from './widgets/Lighting'
 
 export default {
   name: 'Dashboard',
   components: {
-    //MainChartExample,
-    //WidgetsDropdown,
-    //WidgetsBrand,
+    MainChartExample,
+    WidgetsDropdown,
+    WidgetsBrand,
     welcomeMessage,
     houseImage,
+    LightDevice
   },
  
   methods: {

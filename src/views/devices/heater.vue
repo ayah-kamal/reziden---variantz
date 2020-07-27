@@ -1,9 +1,8 @@
 <template>
-    
-<CRow class="rowStyle">
+    <CRow class="rowStyle">
         <CCard>
-          <h4 class = "title">Air Conditioning</h4>
-        <img  class = "deviceImage" src="https://www.tristar.eu/product/image/medium/ac-5408_0.jpg" alt="">
+          <h4 class = "title">Heater</h4>
+        <img  class = "deviceImage" src="smartHeater.jpg" alt="">
   
    <div class="onoffswitch">
     <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2" tabindex="0" checked>
@@ -17,3 +16,5 @@
 </CCard>
 </CRow>
 </template>
+
+
