@@ -1,5 +1,6 @@
 # CoreUI Free Vue Bootstrap Admin Template
 
+<<<<<<< HEAD
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=CoreUI%20-%20Free%20Vue%20Admin%20Template%20&url=http://coreui.io/vue/&hashtags=bootstrap,admin,template,dashboard,panel,free,angular,react,vue)
 [![NPM][npm-coreui-vue-badge-latest]][npm-coreui-vue]
 [![Downloads](https://img.shields.io/npm/dm/@coreui/vue.svg?style=flat-square)][coreui]
@@ -154,3 +155,6 @@ There is only one limitation - you cannot re-distribute the `CoreUI` as stock no
 ## Support CoreUI Development
 
 CoreUI is an MIT licensed open source project and completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. You can support development by buying [PRO version](https://coreui.io/pro/).
+=======
+## A Smart Home application 
+>>>>>>> 9702eb6a6f130702fb7c2bf74ab46127c898b222
