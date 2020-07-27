@@ -36,8 +36,8 @@
 
 
 <script>
-import lighting from "../devices/lighting";
-import curtains from "../devices/curtains";
+import lighting from "../devices/Lighting";
+import curtains from "../devices/Curtains";
 import showerHead from "../devices/showerHead";
 import heater from "../devices/heater";
 import vanityMirror from "../devices/vanityMirror";

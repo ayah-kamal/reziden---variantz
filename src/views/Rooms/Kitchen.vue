@@ -27,9 +27,9 @@
 
 
 <script>
-import lighting from '../devices/lighting'
-import curtains from '../devices/curtains'
-import airConditioning from '../devices/airConditioning'
+import lighting from '../devices/Lighting'
+import curtains from '../devices/Curtains'
+import airConditioning from '../devices/AirConditioning'
 import CoffeeMachine  from '../devices/CoffeeMachine'
 import fridge from '../devices/fridge'
 import microwave from '../devices/microwave'

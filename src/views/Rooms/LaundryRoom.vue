@@ -20,9 +20,9 @@
 
 
 <script>
-import lighting from '../devices/lighting'
-import curtains from '../devices/curtains'
-import airConditioning from '../devices/airConditioning'
+import lighting from '../devices/Lighting'
+import curtains from '../devices/Curtains'
+import airConditioning from '../devices/AirConditioning'
 import washingMachine  from '../devices/washingMachine'
 import Dryer from '../devices/Dryer'
 import clothingCareSystem from '../devices/clothingCareSystem'
