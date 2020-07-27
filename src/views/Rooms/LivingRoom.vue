@@ -2,37 +2,18 @@
   <div>
       <h3 class = "device">Devices</h3>
       <hr>
+
       <CRow>
     <CRow class="rowStyle">
         <CCard>
-          <h4 class = "title">Lighting</h4>
-        <img class = "deviceImage" src="https://gloimg.gbtcdn.com/images/pdm-product-pic/Electronic/2018/07/07/source-img/20180707112740_17931.jpg_500x500.jpg" alt="">
-  
-   <div class="onoffswitch">
-    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch1" tabindex="0" checked>
-    <label class="onoffswitch-label" for="myonoffswitch1">
-        <span class="onoffswitch-inner"></span>
-        <span class="onoffswitch-switch"></span>
-    </label>
-</div>
-
+            <Lighting/>
 </CCard>
 </CRow>
 
+
 <CRow class="rowStyle">
         <CCard>
-          <h4 class = "title">Air Conditioning</h4>
-        <img  class = "deviceImage" src="https://www.tristar.eu/product/image/medium/ac-5408_0.jpg" alt="">
-  
-   <div class="onoffswitch">
-    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2" tabindex="0" checked>
-    <label class="onoffswitch-label" for="myonoffswitch2">
-        <span class="onoffswitch-inner"></span>
-        <span class="onoffswitch-switch"></span>
-    </label>
-
-</div>
-
+            <AirConditioning/>
 </CCard>
 </CRow>
      
@@ -41,20 +22,10 @@
 
 <CRow class="rowStyle">
         <CCard>
-          <h4 class = "title">Curtains</h4>
-        <img  class = "deviceImage" src="https://ak1.ostkcdn.com/images/products/14333387/Maytex-Smart-Curtains-Sheridan-100-Percent-Blackout-84-Inch-Window-Panel-fa7c8b46-7cf4-43f5-89fa-2c3ab28c7a80.jpg" alt="">
-  
-   <div class="onoffswitch">
-    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch3" tabindex="0" checked>
-    <label class="onoffswitch-label" for="myonoffswitch3">
-        <span class="onoffswitch-inner"></span>
-        <span class="onoffswitch-switch"></span>
-    </label>
-
-</div>
-
+         <Curtains/>
 </CCard>
 </CRow>
+
 <CRow class="rowStyle">
         <CCard>
           <h4 class = "title">Smart TV</h4>
@@ -114,21 +85,22 @@
 
 
 <script>
+import Lighting from '../devices/Lighting'
+import AirConditioning from '../devices/AirConditioning'
+import Curtains from '../devices/Curtains'
+
 export default {
   name: 'LivingRoom',
   components: {
+      Lighting,
+      AirConditioning,
+      Curtains,
   }
   }
 </script>
 
-<script>
-export default {
-  
-}
-</script>
 
-
-<style scoped>
+<style>
 .device{
     margin-left: 15px;
 }
