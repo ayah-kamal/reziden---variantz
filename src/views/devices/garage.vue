@@ -1,7 +1,7 @@
 <template>
     <CRow class="rowStyle">
         <CCard>
-          <h4 class = "title">Garage door opener</h4>
+          <h4 class = "title">Garage Door Opener</h4>
         <img  class = "deviceImage" src="garage.jpg" alt="">
   
    <div class="onoffswitch">
