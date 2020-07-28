@@ -18,9 +18,9 @@
     "type": "git",
     "url": "git@github.com:ayah-kamal/reziden---variantz.git"
   },
-  "publishConfig": { 
-  "registry": "https://npm.pkg.github.com/"
-   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "homepage": "http://coreui.io",
   "copyright": "Copyright 2020 creativeLabs Łukasz Holeczek",
   "license": "MIT",

@@ -68,6 +68,11 @@ const MasterBedroom = () => import('@/views/Rooms/MasterBedroom')
 const Cameras = () => import('@/views/Security/Cameras')
 const Safety = () => import('@/views/Security/Safety')
 const Garage = () => import('@/views/Security/Garage')
+
+//+
+//Views - Add New
+const AddDevice = () => import('@/views/Rooms/DeviceAdd')
+const AddRoom = () => import('@/views/Rooms/RoomAdd')
  
 // Users
 const Users = () => import('@/views/users/Users')
@@ -84,10 +89,6 @@ export default new Router({
 
 function configRoutes () {
   return [
-
-    
-
-    
     {
       path: '/',
       redirect: '/dashboard',
@@ -109,6 +110,11 @@ function configRoutes () {
             render (c) { return c('router-view') }
           },
           children: [
+            {
+              path: 'room-add',
+              name: 'Add New Room',
+              component: AddRoom
+            },
             {
               path: 'guest-bathroom',
               name: 'Guest Bathroom',
@@ -192,6 +198,14 @@ function configRoutes () {
         }
       ]
     },
+    {
+      path: '/Rooms',
+      name: 'Roo',
+      component: TheContainer,
+      children: [
+        
+      ]
+    }
   ]
 }
 

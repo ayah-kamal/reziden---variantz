@@ -35,18 +35,13 @@ export default [
         _name: 'CSidebarNavTitle',
         _children: ['Rooms']
       },
+    {
+      _name: 'CSidebarNavItem',
+      name: 'Add New Room',
+      to: '/rooms/room-add',
+      icon: 'cil-plus',
+    },
 
-      //
-
-      /*{_name:'CSidebarNavItem',
-      name: 'Add a New Room',
-      //route: '/base',
-      //icon: 'cil-sofa', 
-    },*/
-
-    //
-
-    
       {
         _name: 'CSidebarNavItem',
         name: 'Living Room',
@@ -66,11 +61,6 @@ export default [
           {
             name: 'Guest Bedroom',
             to: '/rooms/guest-bedroom'
-          },
-          {
-            name: 'Add New Bedroom',
-            //
-            to: '/buttons/button-groups'
           },
         ]
       },
@@ -105,11 +95,6 @@ export default [
             name: 'Guest Bathroom',
             to: '/rooms/guest-bathroom'
           },
-          {
-            name: 'Add New Bathroom',
-            //
-            to: '/icons/flags'
-          }
         ]
       },
       {

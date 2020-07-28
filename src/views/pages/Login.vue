@@ -28,7 +28,7 @@
                     </CCol>
                     <CCol col="6" class="text-right">
                       <CButton color="link" class="px-0">Forgot password?</CButton>
-                      <CButton color="link" class="d-lg-none">Register now!</CButton>
+                      <CButton v-on:click="register" color="link" class="d-lg-none" >Register now!</CButton>
                     </CCol>
                   </CRow>
                 </CForm>
@@ -64,6 +64,11 @@
 <script>
 
 export default {
-  name: 'Login'
+  name: 'Login',
+  methods: {
+    register: function(){
+      this.$router.push("./pages/Register");
+    }
+  }
 }
 </script>

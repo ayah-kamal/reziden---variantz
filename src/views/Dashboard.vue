@@ -452,6 +452,7 @@
         </CCard>
       </CCol>
     </CRow> -->
+    <button v-on:click="newDevice">Add New Device</button>
   </div>
 </template>
 
@@ -461,7 +462,6 @@ import WidgetsDropdown from './widgets/WidgetsDropdown'
 import WidgetsBrand from './widgets/WidgetsBrand'
 import welcomeMessage from './Welcome/WelcomeMessage'
 import houseImage from './Welcome/HouseImage'
-import LightDevice from './widgets/Lighting'
 
 export default {
   name: 'Dashboard',
@@ -471,7 +471,6 @@ export default {
     WidgetsBrand,
     welcomeMessage,
     houseImage,
-    LightDevice
   },
  
   methods: {
@@ -487,6 +486,10 @@ export default {
         $color = 'danger'
       }
       return $color
+    },
+
+    newDevice: function(){
+      this.$router.push("../Rooms/DeviceAdd");
     }
   }
 }
