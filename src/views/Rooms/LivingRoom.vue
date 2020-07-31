@@ -9,18 +9,21 @@
       <TV />
       <diffuser />
       <soundSystem />
+      <modem/>
     </CRow>
   </div>
 </template>
 
 
 <script>
-import lighting from "../devices/Lighting";
-import curtains from "../devices/Curtains";
-import airConditioning from "../devices/AirConditioning";
-import diffuser from "../devices/diffuser";
-import TV from "../devices/TV";
-import soundSystem from "../devices/soundSystem";
+import lighting from "../devices/Lighting"
+import curtains from "../devices/Curtains"
+import airConditioning from "../devices/AirConditioning"
+import diffuser from "../devices/diffuser"
+import TV from "../devices/TV"
+import soundSystem from "../devices/soundSystem"
+import modem from '../devices/modem'
+
 export default {
   name: "GuestBedroom",
   components: {
@@ -29,7 +32,8 @@ export default {
     airConditioning,
     TV,
     diffuser,
-    soundSystem
+    soundSystem,
+    modem
   }
 };
 </script>

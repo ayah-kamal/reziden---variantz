@@ -38,10 +38,9 @@ export default [
     {
       _name: 'CSidebarNavItem',
       name: 'Add New Room',
-      to: '/rooms/room-add',
+      to: '/rooms/rooms-add',
       icon: 'cil-plus',
     },
-
       {
         _name: 'CSidebarNavItem',
         name: 'Living Room',

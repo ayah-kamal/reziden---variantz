@@ -72,7 +72,7 @@ const Garage = () => import('@/views/Security/Garage')
 //+
 //Views - Add New
 const AddDevice = () => import('@/views/Rooms/DeviceAdd')
-const AddRoom = () => import('@/views/Rooms/RoomAdd')
+const AddRooms = () => import('@/views/Rooms/RoomsAdd')
  
 // Users
 const Users = () => import('@/views/users/Users')
@@ -111,9 +111,14 @@ function configRoutes () {
           },
           children: [
             {
-              path: 'room-add',
+              path: 'rooms-add',
               name: 'Add New Room',
-              component: AddRoom
+              component: AddRooms
+            },
+            {
+              path: 'device-add',
+              name: 'Add New Device',
+              component: AddDevice
             },
             {
               path: 'guest-bathroom',
@@ -198,14 +203,6 @@ function configRoutes () {
         }
       ]
     },
-    {
-      path: '/Rooms',
-      name: 'Roo',
-      component: TheContainer,
-      children: [
-        
-      ]
-    }
   ]
 }
 

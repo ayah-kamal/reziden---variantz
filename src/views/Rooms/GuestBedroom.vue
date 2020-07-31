@@ -23,10 +23,8 @@
 import lighting from "../devices/Lighting";
 import curtains from "../devices/Curtains";
 import airConditioning from "../devices/AirConditioning";
-
 import alarm from "../devices/alarm";
 import diffuser from "../devices/diffuser";
-
 import TV from "../devices/TV";
 
 export default {

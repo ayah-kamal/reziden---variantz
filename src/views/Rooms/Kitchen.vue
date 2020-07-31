@@ -40,7 +40,6 @@ import stoveAndOven from '../devices/stoveAndOven'
 import dishwasher from '../devices/dishwasher'
 import kettle from '../devices/kettle'
 import iceMaker from '../devices/iceMaker'
-
 import kitchenHood from '../devices/kitchenHood'
 
 
