@@ -1,6 +1,6 @@
 <template>
 <div>
-    <h1>Welcome Back</h1>
+    <h1>Welcome Back!</h1>
     <h5>Here are your latest updates</h5>
 
 </div>
