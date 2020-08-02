@@ -28,10 +28,10 @@
       </CCol>
       </div>
 
-      <!-- <div>
+      <div>
       <div id="dispRoom"></div>
       <button  v-on:click="deviceRoute">Add New Device</button>
-      </div> -->
+      </div>
 
       <component v-bind:is='living-room'></component>
 
