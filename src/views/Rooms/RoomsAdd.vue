@@ -25,7 +25,7 @@
   <input placeholder="Enter room name" type="text" id="roomName">
   <br>
    <button  onclick="showMessage">add</button>
-
+   <p id= "printhere"></p>  
 
       </CCol>
       </div>
@@ -51,7 +51,7 @@
           </p> -->
 
               <CCardFooter>   
-                <p id= "printhere"></p>      
+                  
         <CButton  
           @click="innerCollapse = !innerCollapse" 
           size="sm" 

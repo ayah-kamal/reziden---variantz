@@ -320,13 +320,7 @@ export default {
     }
 }
 </script>
-<script>
-function colorChange(){
 
- var box  = document.getElementsByID("buttons");   
-             box.style.backgroundColor= "green"; 
-             }
-</script>
 
 
 <style scoped>
