@@ -11,7 +11,7 @@
       <diffuser />
       <soundSystem />
       <modem/>
-    </CRow>
+    </CRow> 
   </div>
 </template>
 

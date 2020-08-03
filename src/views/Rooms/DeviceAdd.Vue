@@ -4,12 +4,12 @@
     <hr/>
 
     <CRow>
-        <!-- <CCard>
+        <CCard>
             <CCardHeader>
             <button>+ Add</button>
-            </CCardHeader> -->
+            </CCardHeader>
       <lighting />
-      <!-- </CCard> -->
+      </CCard>
       <curtains/>
       <airconditioning/>
       <diffuser/>
