@@ -7,8 +7,8 @@
         <CCardBody>
       <div class="roomContainer">
       <CCol>
-          <br>
-<label class="textStyle" for="rooms">Choose a room:</label>
+          <!-- <br> -->
+<!-- <label class="textStyle" for="rooms">Choose a room:</label>
 
 
 <select class="rooms" >
@@ -18,31 +18,17 @@
   <option value= '3'>Kitchen</option>
   <option value= '4'>Bathroom</option>
   <option value= '5'>Other</option>
-</select>
+</select> -->
   
 <br>
   <label>Enter room name:</label>
-
   <input placeholder="Enter room name" type="text" id="roomName">
-
-<!-- <br>
-  <input type="button" value="Submit" v-on:click = "submitButton"> -->
 
       </CCol>
       </div>
         </CCardBody>
 
-      <!-- <div>
-      <div id="dispRoom"></div>
-      <button  v-on:click="deviceRoute">Add New Device</button>
-      </div> -->
-
-          <!-- <component v-bind:is= "living-room"></component> -->
-          <!-- <living-room></living-room> -->
-
-          <CCardFooter>
-
-          <CButton 
+          <!-- <CButton 
       @click="collapse = !collapse" 
       color="primary"
       class="mb-2"
@@ -59,7 +45,9 @@
         <p v-else-if="rooms='2'">
           Bedroom
           <bedroom/>
-          </p>
+          </p> -->
+
+              <CCardFooter>         
         <CButton  
           @click="innerCollapse = !innerCollapse" 
           size="sm" 
@@ -72,11 +60,11 @@
             <device-add/>
           </CCard>
         </CCollapse>
-      </CCard>
-    </CCollapse>
           </CCardFooter>
-
       </CCard>
+
+    <!-- </CCollapse> -->
+      <!-- </CCard> -->
 
     </div>
 </template>
@@ -101,7 +89,7 @@ export default {
         bedroom
         },
     methods:{
-    submitButton: function(){
+    /*submitButton: function(){
         var roomSelect = document.getElementById("rooms");
         var roomSelectIndex = roomSelect[roomSelect.selectedIndex].value;
 
@@ -112,7 +100,11 @@ export default {
            document.getElementById("dispRoom").innerHTML= "hello";
         }
 
-        //this.$router.push("../rooms/device-add");
+        this.$router.push("../rooms/device-add");
+    },*/
+    showMessage: function(){
+      var result = document.getElementById("roomName").value.innerHTML;
+      return result;
     },
     deviceRoute: function(){
         this.$router.push("../rooms/device-add");
