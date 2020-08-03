@@ -6,42 +6,232 @@
     <CRow>
         <CCard>
             <CCardHeader>
-            <button>+ Add</button>
+            <button 
+            v-bind:class = "{'buttons': !clicked,'unbuttons':clicked}"
+            v-on:click = "clicked=!clicked">Add</button>
             </CCardHeader>
       <lighting />
       </CCard>
-      <curtains/>
-      <airconditioning/>
-      <diffuser/>
-      <TV/>
-      <soundSystem/>
-      <showerHead/>
-      <heater/>
-      <vanityMirror/>
-      <scaler/>
-      <alarm/>
-      <CoffeeMachine/>
-      <fridge/>
-      <microwave/>
-      <kitchenScale/>
-      <airFryer/>
-      <toaster/>
-      <stoveAndOven/>
-      <dishwasher/>
-      <kettle/>
-      <iceMaker/>
-      <kitchenHood/>
-      <washingMachine/>
-      <Dryer/>
-      <clothingCareSystem/>
-      <homeSecuirtyCamera/>
-      <safetyBox/>
-      <doorLock/>
-      <SecurityAlarm/>
-      <temperatureSensor/>
-      <smokeDetector/>
-      <SOS/>
 
+       <CCard>
+       <CCardHeader>
+            <button class = "buttons" id ="buttons" on:click= 'colorChange'>Add</button>
+            </CCardHeader>
+      <curtains/>
+      </CCard>
+
+      <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+      <airConditioning/>
+      </CCard>
+
+     <CCard> 
+         <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+      <diffuser/>
+      </CCard>
+
+      <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+      <TV/>
+      </CCard>
+
+      <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+      <soundSystem/>
+      </CCard>
+
+      <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+      <showerHead/>
+      </CCard>
+
+    <CCard>
+    <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+      <heater/>
+      </CCard>
+
+      <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+      <vanityMirror/>
+      </CCard>
+
+      <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+      <scaler/>
+      </CCard>
+
+      <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+      <alarm/>
+      </CCard>
+
+      <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+      <CoffeeMachine/>
+      </CCard>
+
+      <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+      <fridge/>
+      </CCard>
+
+      <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+      <microwave/>
+      </CCard>
+
+      <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+      <kitchenScale/>
+      </CCard>
+
+      <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+      <airFryer/>
+      </CCard>
+
+      <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+   <toaster/>
+      </CCard>
+
+      <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+       <iceMaker/>
+      </CCard>
+
+      <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+       <stoveAndOven/>
+      </CCard>
+
+      <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+   <dishwasher/>
+      </CCard>
+
+      <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+        <kettle/>
+      </CCard>
+
+      <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+       <kitchenHood/>
+      </CCard>
+
+      <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+          <washingMachine/>
+      </CCard>
+
+      <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+        <Dryer/>
+      </CCard>
+
+      <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+    <clothingCareSystem/>
+      </CCard>
+
+      <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+    <homeSecuirtyCamera/>
+      </CCard>
+
+      <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+      <safetyBox/>
+      </CCard>
+
+      <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+         <doorLock/>
+      </CCard>
+
+       <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+           <SecurityAlarm/>
+      </CCard>
+
+       <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+      <tempretureSensor/>
+      </CCard>
+
+       <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+      <smokeDetector/>
+      </CCard>
+
+       <CCard>
+          <CCardHeader>
+            <button class = "buttons">Add</button>
+            </CCardHeader>
+      <SOS/>
+      </CCard>
+
+
+    
     </CRow>
 </div>
 </template>
@@ -117,11 +307,58 @@ export default {
     washingMachine,
     soundSystem,
     Dryer 
-    } 
+    },
+    methods:{
+        colorChange1: function() {     
+             var box  = document.getElementsByID("buttons");   
+             box.style.backgroundColor= "green"; 
+             }
+
+    },
+    data: {
+        clicked: false
+    }
 }
+</script>
+<script>
+function colorChange(){
+
+ var box  = document.getElementsByID("buttons");   
+             box.style.backgroundColor= "green"; 
+             }
 </script>
 
 
 <style scoped>
+
+.buttons{
+  margin-left: 80px;
+  background-color: rgb(7, 75, 131);
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.buttons :focus{
+
+}
+
+.unbuttons{
+margin-left: 80px;
+  background-color: rgb(35, 156, 55);
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 12px;
+  font-size: 16px;
+}
 
 </style>

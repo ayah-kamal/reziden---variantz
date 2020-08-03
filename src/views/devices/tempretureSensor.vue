@@ -1,7 +1,7 @@
 <template>
     <CRow class="rowStyle">
         <CCard>
-          <h4 class = "title">Tempreture Sensor</h4>
+          <h4 class = "title">Temperature Sensor</h4>
         <img  class = "deviceImage" src="Tem_sensor.jpg" alt="">
   
    <div class="onoffswitch">

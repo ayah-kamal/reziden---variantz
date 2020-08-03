@@ -5,7 +5,7 @@
 
     <CRow>
       <lighting />
-      <airConditiong />
+      <airConditioning/>
       <curtains />
       <TV />
       <diffuser />

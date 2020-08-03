@@ -23,6 +23,9 @@
 <br>
   <label>Enter room name:</label>
   <input placeholder="Enter room name" type="text" id="roomName">
+  <br>
+   <button  onclick="showMessage">add</button>
+
 
       </CCol>
       </div>
@@ -47,7 +50,8 @@
           <bedroom/>
           </p> -->
 
-              <CCardFooter>         
+              <CCardFooter>   
+                <p id= "printhere"></p>      
         <CButton  
           @click="innerCollapse = !innerCollapse" 
           size="sm" 
@@ -57,6 +61,7 @@
         </CButton>
         <CCollapse :show="innerCollapse" class="mt-2">
           <CCard body-wrapper>
+            
             <device-add/>
           </CCard>
         </CCollapse>
@@ -102,13 +107,10 @@ export default {
 
         this.$router.push("../rooms/device-add");
     },*/
-    showMessage: function(){
-      var result = document.getElementById("roomName").value.innerHTML;
-      return result;
-    },
-    deviceRoute: function(){
-        this.$router.push("../rooms/device-add");
-    }    
+    showMessage: function(){     
+    var roomName = document.getElementById("roomName").value;
+    document.getElementById("printhere").innerHTML = roomName;
+    },   
 },
 data () {
     return {
