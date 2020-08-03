@@ -1,9 +1,47 @@
 <template>
 <div>
     <h3 class="device">Add a Device</h3>
-    <hr />
+    <hr/>
+
     <CRow>
-      
+        <!-- <CCard>
+            <CCardHeader>
+            <button>+ Add</button>
+            </CCardHeader> -->
+      <lighting />
+      <!-- </CCard> -->
+      <curtains/>
+      <airconditioning/>
+      <diffuser/>
+      <TV/>
+      <soundSystem/>
+      <showerHead/>
+      <heater/>
+      <vanityMirror/>
+      <scaler/>
+      <alarm/>
+      <CoffeeMachine/>
+      <fridge/>
+      <microwave/>
+      <kitchenScale/>
+      <airFryer/>
+      <toaster/>
+      <stoveAndOven/>
+      <dishwasher/>
+      <kettle/>
+      <iceMaker/>
+      <kitchenHood/>
+      <washingMachine/>
+      <Dryer/>
+      <clothingCareSystem/>
+      <homeSecuirtyCamera/>
+      <safetyBox/>
+      <doorLock/>
+      <SecurityAlarm/>
+      <temperatureSensor/>
+      <smokeDetector/>
+      <SOS/>
+
     </CRow>
 </div>
 </template>
@@ -43,9 +81,10 @@ import  tempretureSensor from "../devices/tempretureSensor"
 import  smokeDetector from "../devices/smokeDetector"
 import  SOS from "../devices/SOS"
 
-import {roomSelect} from "../Rooms/DeviceAdd"
 
 export default {
+    name: "Device Add",
+    components:{
     lighting,
     curtains,
     airConditioning,
@@ -77,9 +116,11 @@ export default {
     vanityMirror,
     washingMachine,
     soundSystem,
-    Dryer  
+    Dryer 
+    } 
 }
 </script>
+
 
 <style scoped>
 

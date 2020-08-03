@@ -2,14 +2,17 @@
      <div>
         <h3 class = "device">Room Settings</h3>
       <hr>
+
+      <CCard>
+        <CCardBody>
       <div class="roomContainer">
       <CCol>
           <br>
 <label class="textStyle" for="rooms">Choose a room:</label>
 
 
-<select id="rooms" >
-  <option>-Choose a Room-</option>
+<select class="rooms" >
+  <option disabled value="" selected>-Choose a Room-</option>
   <option value= '1'>Living Room</option>
   <option value= '2'>Bedroom</option>
   <option value= '3'>Kitchen</option>
@@ -20,31 +23,71 @@
 <br>
   <label>Enter room name:</label>
 
-  <input placeholder="Enter room name" type="text" id="roomName" required>
+  <input placeholder="Enter room name" type="text" id="roomName">
 
-<br>
-  <input type="button" value="Submit" v-on:click = "submitButton">
+<!-- <br>
+  <input type="button" value="Submit" v-on:click = "submitButton"> -->
 
       </CCol>
       </div>
+        </CCardBody>
 
-      <div>
+      <!-- <div>
       <div id="dispRoom"></div>
       <button  v-on:click="deviceRoute">Add New Device</button>
-      </div>
-
-      <component v-bind:is='living-room'></component>
+      </div> -->
 
           <!-- <component v-bind:is= "living-room"></component> -->
           <!-- <living-room></living-room> -->
 
-     
+          <CCardFooter>
+
+          <CButton 
+      @click="collapse = !collapse" 
+      color="primary"
+      class="mb-2"
+    >
+      Submit
+    </CButton>
+    <CCollapse :show="collapse">
+      <CCard body-wrapper>
+        <p v-if="rooms='1'">
+          Living Room
+        <living-room/>
+        </p>
+
+        <p v-else-if="rooms='2'">
+          Bedroom
+          <bedroom/>
+          </p>
+        <CButton  
+          @click="innerCollapse = !innerCollapse" 
+          size="sm" 
+          color="secondary"
+        >
+          Add New Device
+        </CButton>
+        <CCollapse :show="innerCollapse" class="mt-2">
+          <CCard body-wrapper>
+            <device-add/>
+          </CCard>
+        </CCollapse>
+      </CCard>
+    </CCollapse>
+          </CCardFooter>
+
+      </CCard>
 
     </div>
 </template>
 
 <script>
+var roomSelect = document.getElementById("rooms");
+
 import livingRoom from "../Rooms/LivingRoom.vue"
+import kitchen from "../Rooms/Kitchen.vue"
+import bedroom from "../Rooms/MasterBedroom.vue"
+import deviceAdd from "../Rooms/DeviceAdd.vue"
 
 
 //export {roomSelect}
@@ -53,6 +96,9 @@ export default {
     name: "RoomsAdd",
     components: {
         'living-room': livingRoom,
+        deviceAdd,
+        kitchen,
+        bedroom
         },
     methods:{
     submitButton: function(){
@@ -70,7 +116,16 @@ export default {
     },
     deviceRoute: function(){
         this.$router.push("../rooms/device-add");
-    }
+    }    
 },
+data () {
+    return {
+      collapse: false,
+      innerCollapse: false,
+      rooms: {
+        
+      },
+    }
+  }
 };
 </script>

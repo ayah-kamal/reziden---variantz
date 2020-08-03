@@ -41,6 +41,13 @@ export default [
       to: '/rooms/rooms-add',
       icon: 'cil-plus',
     },
+    /*{
+    _name: 'CSidebarNavItem',
+      name: 'Add New Device',
+      to: '/rooms/device-add',
+      icon: 'cil-plus',
+    },*/
+
       {
         _name: 'CSidebarNavItem',
         name: 'Living Room',

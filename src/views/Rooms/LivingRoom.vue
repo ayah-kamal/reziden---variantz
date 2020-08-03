@@ -2,6 +2,7 @@
   <div>
     <h3 class="device">Devices</h3>
     <hr />
+
     <CRow>
       <lighting />
       <airConditiong />
