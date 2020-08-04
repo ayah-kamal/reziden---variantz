@@ -7,10 +7,9 @@
         <CCardBody>
       <div class="roomContainer">
       <CCol>
+
           <!-- <br> -->
 <!-- <label class="textStyle" for="rooms">Choose a room:</label>
-
-
 <select class="rooms" >
   <option disabled value="" selected>-Choose a Room-</option>
   <option value= '1'>Living Room</option>
@@ -21,11 +20,9 @@
 </select> -->
   
 <br>
-  <label>Enter room name:</label>
-  <input placeholder="Enter room name" type="text" id="roomName">
+  <label class="choose" for="roomName">Choose the name for your new room:</label>
   <br>
-   <button  onclick="showMessage">add</button>
-   <p id= "printhere"></p>  
+  <input placeholder="Enter room name" type="text" id="roomName" class="roomNaming">
 
       </CCol>
       </div>
@@ -50,18 +47,21 @@
           <bedroom/>
           </p> -->
 
-              <CCardFooter>   
+        <CCardFooter>   
                   
         <CButton  
-          @click="innerCollapse = !innerCollapse" 
+          @click="innerCollapse = !innerCollapse; showMessage()" 
           size="sm" 
           color="secondary"
+          class="addDevicebtn"
         >
           Add New Device
         </CButton>
+
         <CCollapse :show="innerCollapse" class="mt-2">
           <CCard body-wrapper>
-            
+            <h2 id="main" class="printRoomName"></h2>
+            <hr>
             <device-add/>
           </CCard>
         </CCollapse>
@@ -109,12 +109,12 @@ export default {
     },*/
     showMessage: function(){     
     var roomName = document.getElementById("roomName").value;
-    document.getElementById("printhere").innerHTML = roomName;
+    document.getElementById("main").innerHTML = roomName;
     },   
 },
 data () {
     return {
-      collapse: false,
+      //collapse: false,
       innerCollapse: false,
       rooms: {
         
@@ -123,3 +123,64 @@ data () {
   }
 };
 </script>
+
+<style scoped>
+.printRoomName{
+  margin-left: 15px;
+  color: rgb(32, 40, 129);
+}
+
+.choose{
+  margin-left: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  color:  rgb(32, 40, 129);
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  /* font-size: 1rem; */
+}
+
+.roomNaming{
+  margin-left: 15px;
+  width: 320px;
+  border: none;
+  border-bottom: 2px solid rgba(146, 136, 136, 0.849);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  outline: none;
+  font-family: inherit;
+  font-size: 1.1rem;
+  padding: 7px 0;
+  background: transparent;
+}
+
+.addDevicebtn {
+	background:linear-gradient(to bottom, #1c366b 5%, #2d4385 100%);
+	background-color:#1c366b;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:12px 25px;
+  text-decoration:none;
+  margin-left: 25px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.addDevicebtn:hover {
+	background:linear-gradient(to bottom, #2d4385 5%, #1c366b 100%);
+	background-color:#2d4385;
+}
+.addDevicebtn:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+</style>
+

@@ -1,7 +1,7 @@
 <template>
 <div>
     <h3 class="device">Add a Device</h3>
-    <hr/>
+    <br>
 
     <CRow>
         <CCard>
