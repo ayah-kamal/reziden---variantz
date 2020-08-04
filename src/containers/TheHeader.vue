@@ -46,7 +46,7 @@
       </CHeaderNavItem>
 
       <CHeaderNavItem class="px-3">
-        <CHeaderNavLink>
+        <CHeaderNavLink to="/pages/settings">
           Settings
         </CHeaderNavLink>
       </CHeaderNavItem>

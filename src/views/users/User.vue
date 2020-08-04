@@ -94,7 +94,7 @@
             font-size: 18px;"
             for="dobEdit">
             Date of Birth:</label>
-             <input placeholder="dd/mm/yy" type="number" id="dobEdit" class="dobEdit"
+             <input placeholder="dd/mm/yyyy" type="text" id="dobEdit" class="dobEdit"
              name="dobEdit">
 
              <br>

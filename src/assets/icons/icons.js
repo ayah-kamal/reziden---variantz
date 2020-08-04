@@ -95,7 +95,8 @@ import {
   cilFridge,
   cilKeyboard,
   cilPlus,
-  cilBellExclamation
+  cilBellExclamation,
+
   
 
   
@@ -175,7 +176,8 @@ export const iconsSet = Object.assign(
     cilFridge,
     cilKeyboard,
     cilPlus,
-    cilBellExclamation
+    cilBellExclamation,
+
     
     
   },
