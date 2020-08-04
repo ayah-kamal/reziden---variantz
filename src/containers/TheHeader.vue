@@ -55,9 +55,67 @@
 
     <CHeaderNav class="mr-4">
       <CHeaderNavItem class="d-md-down-none mx-1">
-        <CHeaderNavLink>
+        
+
+           <CDropdown
+    inNav
+    class="c-header-notif"
+    placement="bottom-end"
+    add-menu-classes="pt-0"
+  >
+    <template #toggler>
+      <CHeaderNavLink>
           <CIcon name="cil-bell"/>
-        </CHeaderNavLink>
+
+      </CHeaderNavLink>
+    </template>
+
+    <CDropdownItem disabled>06/07/2020</CDropdownItem>
+    <CDropdownItem>
+      <CIcon name="cil-bell-exclamation"/> New room added 'Guest Bedroom'
+    </CDropdownItem>
+
+    <CDropdownItem>
+      <CIcon name="cil-bell-exclamation"/> New device added 'Diffuser' to 
+      'Living Room'
+    </CDropdownItem>
+   
+    <CDropdownItem>
+      <CIcon name="cil-bell-exclamation"/>'Doorbell' used at 9:23PM 
+    </CDropdownItem>
+
+    <CDropdownItem>
+      <CIcon name="cil-bell-exclamation"/>'Garage Door Opener' used at 7:34PM
+    </CDropdownItem>
+
+    <CDropdownItem>
+      <CIcon name="cil-bell-exclamation"/>'Mudroom' renamed as 'Laundry Room'
+    </CDropdownItem>
+
+     <CDropdownDivider></CDropdownDivider>
+
+     <CDropdownItem disabled>05/07/2020</CDropdownItem>
+     <CDropdownItem>
+      <CIcon name="cil-bell-exclamation"/> 'Temperature Sensor' registered new reading in 
+      'Master Bedroom' - 21.5°C
+    </CDropdownItem>
+
+    <CDropdownItem>
+      <CIcon name="cil-bell-exclamation"/> New login detected 
+    </CDropdownItem>
+   
+    <CDropdownItem>
+      <CIcon name="cil-bell-exclamation"/>'Coffee Machine' disabled in 'Kitchen' at 
+      4:03PM 
+    </CDropdownItem>
+
+    <CDropdownItem>
+      <CIcon name="cil-bell-exclamation"/>'Garage Door Opener' used at 8:14AM
+    </CDropdownItem>
+
+
+  </CDropdown>
+
       </CHeaderNavItem>
 
       <!-- <CHeaderNavItem class="d-md-down-none mx-2">
@@ -90,6 +148,7 @@ export default {
   }
 }
 </script>
+
 
 
 

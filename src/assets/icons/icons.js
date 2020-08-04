@@ -93,8 +93,9 @@ import {
   cilMugTea,
   cilPaintBucket,
   cilFridge,
-cilKeyboard,
-cilPlus
+  cilKeyboard,
+  cilPlus,
+  cilBellExclamation
   
 
   
@@ -173,7 +174,8 @@ export const iconsSet = Object.assign(
     cilPaintBucket,
     cilFridge,
     cilKeyboard,
-    cilPlus
+    cilPlus,
+    cilBellExclamation
     
     
   },

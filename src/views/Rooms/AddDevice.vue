@@ -6,226 +6,256 @@
     <CRow>
         <CCard>
             <CCardHeader>
-            <button 
-            v-bind:class = "{'buttons': !clicked,'unbuttons':clicked}"
-            v-on:click = "clicked=!clicked">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
       <lighting />
       </CCard>
 
        <CCard>
        <CCardHeader>
-            <button class = "buttons" id ="buttons" on:click= 'colorChange'>Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
       <curtains/>
       </CCard>
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
       <airConditioning/>
       </CCard>
 
      <CCard> 
          <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
       <diffuser/>
       </CCard>
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
       <TV/>
       </CCard>
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
       <soundSystem/>
       </CCard>
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
       <showerHead/>
       </CCard>
 
     <CCard>
     <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
       <heater/>
       </CCard>
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
       <vanityMirror/>
       </CCard>
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
       <scaler/>
       </CCard>
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
       <alarm/>
       </CCard>
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
       <CoffeeMachine/>
       </CCard>
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
       <fridge/>
       </CCard>
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
       <microwave/>
       </CCard>
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
       <kitchenScale/>
       </CCard>
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
       <airFryer/>
       </CCard>
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
    <toaster/>
       </CCard>
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
        <iceMaker/>
       </CCard>
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
        <stoveAndOven/>
       </CCard>
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
    <dishwasher/>
       </CCard>
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
         <kettle/>
       </CCard>
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
        <kitchenHood/>
       </CCard>
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
           <washingMachine/>
       </CCard>
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
         <Dryer/>
       </CCard>
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
     <clothingCareSystem/>
       </CCard>
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
     <homeSecuirtyCamera/>
       </CCard>
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
       <safetyBox/>
       </CCard>
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
          <doorLock/>
       </CCard>
 
        <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
            <SecurityAlarm/>
       </CCard>
 
        <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
       <tempretureSensor/>
       </CCard>
 
        <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
       <smokeDetector/>
       </CCard>
 
        <CCard>
           <CCardHeader>
-            <button class = "buttons">Add</button>
+            <button class = "buttons" id = "btn2" @click="btn1()" 
+            >Add</button>
             </CCardHeader>
       <SOS/>
       </CCard>
@@ -307,10 +337,12 @@ export default {
     Dryer 
     },
     methods:{
-        colorChange1: function() {     
-             var box  = document.getElementsByID("buttons");   
-             box.style.backgroundColor= "green"; 
-             }
+             btn1: function(){
+
+          document.getElementById("btn2").style.backgroundColor="green";
+          document.getElementById("btn2").textContent= "Added";
+}
+
 
     },
     data: {

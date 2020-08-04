@@ -1,65 +1,244 @@
 <template>
-  <CRow>
-    <CCol col="12" lg="6">
-      <CCard>
-        <CCardHeader>
-          User id:  {{ $route.params.id }}
-        </CCardHeader>
-        <CCardBody>
-          <CDataTable
-            striped
-            small
-            fixed
-            :items="visibleData"
-            :fields="fields"
+<div>
+  <CCard class= "profile">
+    <div class="d-flex justify-content-center">
+          <img
+            src="https://cdn2.iconfinder.com/data/icons/lucid-generic/24/User_person_avtar_profile_picture_dp-512.png"
+            class="c-avatar-img-custom"
+            style="height: 100px; width: 100px"
           />
-        </CCardBody>
-        <CCardFooter>
-          <CButton color="primary" @click="goBack">Back</CButton>
-        </CCardFooter>
-      </CCard>
-    </CCol>
-  </CRow>
+        </div>
+        <label class="username" id="username">Elizabeth Smith</label>
+        <label class="email" id="email">elizabethSmith@email.com</label>
+  </CCard>
+
+  <CCard class="profile-body">
+    <label class="profileHeaders">Phone</label>
+    <label class="profileInfo" id="profileInfoPhone">(186)-379-4936</label>
+    <hr>
+    <label class="profileHeaders">Gender</label>
+    <label class="profileInfo" id="profileInfoGender">Female</label>
+    <hr>
+     <label class="profileHeaders">Date of Birth</label>
+    <label class="profileInfo" id="profileInfoBirth">03/11/72</label>
+     <hr>
+     <label class="profileHeaders">Nationality</label>
+    <label class="profileInfo" id="profileInfoNation">American</label>
+    <br>
+  </CCard>
+
+  <CButton
+  @click="innerCollapse = !innerCollapse" 
+          size="sm" 
+          color="secondary" 
+  class="editProfilebtn">
+    Edit</CButton>
+
+     <CCollapse :show="innerCollapse" class="mt-2">
+          <CCard body-wrapper>
+            <h2 class="editProfileTitle">Edit Profile</h2>
+            <hr>
+            <div class="edit-body">
+            <label 
+            style="font-size: 15px;
+            margin-left: 15px; 
+            font-weight: bold;
+            font-size: 18px;"
+            for="usernameEdit">
+            Username:</label>
+             <input type="text" id="usernameEdit" class="usernameEdit"
+             name="usernameEdit">
+
+             <br>
+
+             <label 
+            style="font-size: 15px;
+            margin-left: 15px; 
+            font-weight: bold;
+            font-size: 18px;"
+            for="emailEdit">
+            Email:</label>
+             <input type="text" id="emailEdit" class="emailEdit"
+             name="emailEdit">
+
+            <br>
+
+            <label 
+            style="font-size: 15px;
+            margin-left: 15px; 
+            font-weight: bold;
+            font-size: 18px;"
+            for="phoneEdit">
+            Phone:</label>
+             <input type= "number" id="phoneEdit" class="phoneEdit"
+             name="phoneEdit">
+
+             <br>
+
+             <label 
+            style="font-size: 15px;
+            margin-left: 15px; 
+            font-weight: bold;
+            font-size: 18px;"
+            for="genderEdit">
+            Gender:</label>
+             <input type="text" id="genderEdit" class="genderEdit"
+             name="genderEdit">
+
+            <br>
+
+            <label 
+            style="font-size: 15px;
+            margin-left: 15px; 
+            font-weight: bold;
+            font-size: 18px;"
+            for="dobEdit">
+            Date of Birth:</label>
+             <input placeholder="dd/mm/yy" type="number" id="dobEdit" class="dobEdit"
+             name="dobEdit">
+
+             <br>
+
+             <label 
+            style="font-size: 15px;
+            margin-left: 15px; 
+            font-weight: bold;
+            font-size: 18px;"
+            for="nationEdit">
+            Nationality:</label>
+             <input type="text" id="nationEdit" class="nationEdit"
+             name="nationEdit">
+
+             <br>
+
+             <CButton 
+             class="savebtn"
+             v-on:click="editProfile()">Save Changes</CButton>
+            </div>
+          </CCard>
+        </CCollapse>
+
+</div>
 </template>
 
+
 <script>
-import usersData from './UsersData'
+
 export default {
-  name: 'User',
-  beforeRouteEnter(to, from, next) {
-    next(vm => {
-      vm.usersOpened = from.fullPath.includes('users')
-    })
-  },
-  data () {
+    name: "User",
+    methods:{
+      editProfile: function(){
+       var userName = document.getElementById("usernameEdit").value;
+       document.getElementById("username").innerHTML = userName;
+
+       var email = document.getElementById("emailEdit").value;
+       document.getElementById("email").innerHTML = email;
+
+       var phone = document.getElementById("phoneEdit").value;
+       document.getElementById("profileInfoPhone").innerHTML = phone;
+
+       var gender = document.getElementById("genderEdit").value;
+       document.getElementById("profileInfoGender").innerHTML = gender;
+
+       var dob = document.getElementById("dobEdit").value;
+       document.getElementById("profileInfoBirth").innerHTML = dob;
+
+       var nationality = document.getElementById("nationEdit").value;
+       document.getElementById("profileInfoNation").innerHTML = nationality;
+
+        }
+    },
+    data () {
     return {
-      usersOpened: null
+      innerCollapse: false,
     }
   },
-  computed: {
-    fields () {
-      return [
-        { key: 'key', label: this.username, _style: 'width:150px'},
-        { key: 'value', label: '', _style: 'width:150px;' }
-      ]
-    },
-    userData () {
-      const id = this.$route.params.id
-      const user = usersData.find((user, index) => index + 1 == id)
-      const userDetails = user ? Object.entries(user) : [['id', 'Not found']]
-      return userDetails.map(([key, value]) => { return { key, value } })
-    },
-    visibleData () {
-      return this.userData.filter(param => param.key !== 'username')
-    },
-    username () {
-      return this.userData.filter(param => param.key === 'username')[0].value
-    }
-  },
-  methods: {
-    goBack() {
-      this.usersOpened ? this.$router.go(-1) : this.$router.push({path: '/users'})
-    }
-  }
-}
+};
 </script>
+
+<style scoped>
+.username{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  color:  rgb(32, 40, 129);
+}
+
+.email{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 15px;
+  color:  black;
+  padding-bottom: 15px;
+}
+
+.profile-body{
+  background-color: rgb(82, 103, 146);
+}
+
+.profileHeaders{
+  color: rgb(196, 196, 196);
+  font-size: 18px;
+  margin-left: 100px;
+  padding-top: 10px;
+}
+
+.profileInfo{
+  color: white;
+  font-size: 20px;
+  margin-left: 100px;
+
+}
+
+.editProfilebtn {
+	background-color:#b8b8b8;
+	border-radius:15px;
+	display:inline-block;
+	cursor:pointer;
+	color:black;
+	font-family:Arial;
+	font-size:16px;
+  font-weight: bold;
+	padding:14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+	text-decoration:none;
+  text-align: center;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.editProfileTitle{
+  margin-left: 15px;
+}
+
+/* .label,input{
+  float: right;
+} */
+
+.edit-body{
+  display: grid;
+}
+
+.savebtn{
+	background-color:#4e8658;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:white;
+	font-family:Arial;
+	font-size:16px;
+	padding:10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+	text-decoration:none;
+  text-align: center;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+
+</style>

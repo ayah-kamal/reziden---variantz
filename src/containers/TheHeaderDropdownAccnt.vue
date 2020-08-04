@@ -17,7 +17,7 @@
       </CHeaderNavLink>
     </template>
 
-    <CDropdownItem v-on:click= "logoutMethod">
+    <CDropdownItem v-on:click= "profileMethod">
       <CIcon name="cil-user" /> Profile
     </CDropdownItem>
 
@@ -43,6 +43,9 @@ export default {
   methods:{
     logoutMethod: function(){
       this.$router.push("../pages/Login");
+    },
+    profileMethod: function(){
+       this.$router.push("../users/User");
     }
   }
 }
