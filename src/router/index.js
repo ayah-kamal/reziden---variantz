@@ -71,8 +71,8 @@ const Garage = () => import('@/views/Security/Garage')
 
 //+
 //Views - Add New
-const AddDevice = () => import('@/views/Rooms/DeviceAdd')
-const AddRooms = () => import('@/views/Rooms/RoomsAdd')
+const AddDevice = () => import('@/views/Rooms/AddDevice')
+const AddRooms = () => import('@/views/Rooms/AddRooms')
  
 // Users
 const Users = () => import('@/views/users/Users')

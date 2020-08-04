@@ -229,10 +229,8 @@
             </CCardHeader>
       <SOS/>
       </CCard>
-
-
-    
     </CRow>
+
 </div>
 </template>
 
@@ -338,9 +336,6 @@ export default {
   font-size: 16px;
 }
 
-.buttons :focus{
-
-}
 
 .unbuttons{
 margin-left: 80px;

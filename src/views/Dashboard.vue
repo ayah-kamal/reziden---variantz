@@ -42,6 +42,13 @@
     <!-- <div>
     <a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/" data-label_1="NEW YORK" data-label_2="WEATHER" data-theme="original" >NEW YORK WEATHER</a>
     </div> -->
+
+     <!-- <CElementCover 
+        :boundaries="[{ sides: ['top', 'left'], query: '.media-body' }]"
+        :opacity="0.8" :center = true
+      >
+        <h1 class="d-inline">Loading... </h1><CSpinner size="5xl" color="success"/>
+      </CElementCover> -->
     </div>
 </template>
 

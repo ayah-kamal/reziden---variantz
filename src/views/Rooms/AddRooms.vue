@@ -1,5 +1,6 @@
 <template>
      <div>
+
         <h3 class = "device">Room Settings</h3>
       <hr>
 
@@ -8,17 +9,6 @@
       <div class="roomContainer">
       <CCol>
 
-          <!-- <br> -->
-<!-- <label class="textStyle" for="rooms">Choose a room:</label>
-<select class="rooms" >
-  <option disabled value="" selected>-Choose a Room-</option>
-  <option value= '1'>Living Room</option>
-  <option value= '2'>Bedroom</option>
-  <option value= '3'>Kitchen</option>
-  <option value= '4'>Bathroom</option>
-  <option value= '5'>Other</option>
-</select> -->
-  
 <br>
   <label class="choose" for="roomName">Choose the name for your new room:</label>
   <br>
@@ -27,26 +17,6 @@
       </CCol>
       </div>
         </CCardBody>
-
-          <!-- <CButton 
-      @click="collapse = !collapse" 
-      color="primary"
-      class="mb-2"
-    >
-      Submit
-    </CButton>
-    <CCollapse :show="collapse">
-      <CCard body-wrapper>
-        <p v-if="rooms='1'">
-          Living Room
-        <living-room/>
-        </p>
-
-        <p v-else-if="rooms='2'">
-          Bedroom
-          <bedroom/>
-          </p> -->
-
         <CCardFooter>   
                   
         <CButton  
@@ -68,9 +38,6 @@
           </CCardFooter>
       </CCard>
 
-    <!-- </CCollapse> -->
-      <!-- </CCard> -->
-
     </div>
 </template>
 
@@ -80,10 +47,8 @@ var roomSelect = document.getElementById("rooms");
 import livingRoom from "../Rooms/LivingRoom.vue"
 import kitchen from "../Rooms/Kitchen.vue"
 import bedroom from "../Rooms/MasterBedroom.vue"
-import deviceAdd from "../Rooms/DeviceAdd.vue"
+import deviceAdd from "../Rooms/AddDevice.vue"
 
-
-//export {roomSelect}
 
 export default {
     name: "RoomsAdd",
@@ -94,31 +59,15 @@ export default {
         bedroom
         },
     methods:{
-    /*submitButton: function(){
-        var roomSelect = document.getElementById("rooms");
-        var roomSelectIndex = roomSelect[roomSelect.selectedIndex].value;
-
-        if (roomSelectIndex==='1'){
-          document.getElementById("dispRoom").append(livingRoom);
-        }
-        else if(roomSelectIndex==='2'){
-           document.getElementById("dispRoom").innerHTML= "hello";
-        }
-
-        this.$router.push("../rooms/device-add");
-    },*/
     showMessage: function(){     
     var roomName = document.getElementById("roomName").value;
     document.getElementById("main").innerHTML = roomName;
-    },   
+    },  
 },
+
 data () {
     return {
-      //collapse: false,
       innerCollapse: false,
-      rooms: {
-        
-      },
     }
   }
 };

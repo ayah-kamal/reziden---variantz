@@ -57,7 +57,7 @@ export default [
       {
         _name: 'CSidebarNavDropdown',
         name: 'Bedroom',
-        route: '/rooms',
+        route: '/rooms/bedrooms',
         icon: 'cil-Bed',
         items: [
           {
