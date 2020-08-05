@@ -6,7 +6,7 @@
     <CRow>
         <CCard>
             <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class="buttons" id = "btn2" 
             >Add</button>
             </CCardHeader>
       <lighting />
@@ -14,7 +14,7 @@
 
        <CCard>
        <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class="buttons" id = "btn3" 
             >Add</button>
             </CCardHeader>
       <curtains/>
@@ -22,7 +22,7 @@
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn4" 
             >Add</button>
             </CCardHeader>
       <airConditioning/>
@@ -30,7 +30,7 @@
 
      <CCard> 
          <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn5"
             >Add</button>
             </CCardHeader>
       <diffuser/>
@@ -38,7 +38,7 @@
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn6"
             >Add</button>
             </CCardHeader>
       <TV/>
@@ -46,7 +46,7 @@
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn7" 
             >Add</button>
             </CCardHeader>
       <soundSystem/>
@@ -54,7 +54,7 @@
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn8" 
             >Add</button>
             </CCardHeader>
       <showerHead/>
@@ -62,7 +62,7 @@
 
     <CCard>
     <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn9" 
             >Add</button>
             </CCardHeader>
       <heater/>
@@ -70,7 +70,7 @@
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn10"
             >Add</button>
             </CCardHeader>
       <vanityMirror/>
@@ -78,7 +78,7 @@
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn11"
             >Add</button>
             </CCardHeader>
       <scaler/>
@@ -86,7 +86,7 @@
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn12"
             >Add</button>
             </CCardHeader>
       <alarm/>
@@ -94,7 +94,7 @@
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn13" 
             >Add</button>
             </CCardHeader>
       <CoffeeMachine/>
@@ -102,7 +102,7 @@
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn14" 
             >Add</button>
             </CCardHeader>
       <fridge/>
@@ -110,7 +110,7 @@
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn15" 
             >Add</button>
             </CCardHeader>
       <microwave/>
@@ -118,7 +118,7 @@
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn16"
             >Add</button>
             </CCardHeader>
       <kitchenScale/>
@@ -126,7 +126,7 @@
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn17" 
             >Add</button>
             </CCardHeader>
       <airFryer/>
@@ -134,7 +134,7 @@
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn18"
             >Add</button>
             </CCardHeader>
    <toaster/>
@@ -142,7 +142,7 @@
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn19" 
             >Add</button>
             </CCardHeader>
        <iceMaker/>
@@ -150,7 +150,7 @@
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn20"
             >Add</button>
             </CCardHeader>
        <stoveAndOven/>
@@ -158,7 +158,7 @@
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn21"
             >Add</button>
             </CCardHeader>
    <dishwasher/>
@@ -166,7 +166,7 @@
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn22"
             >Add</button>
             </CCardHeader>
         <kettle/>
@@ -174,7 +174,7 @@
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn23" 
             >Add</button>
             </CCardHeader>
        <kitchenHood/>
@@ -182,7 +182,7 @@
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn24" 
             >Add</button>
             </CCardHeader>
           <washingMachine/>
@@ -190,7 +190,7 @@
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn25" 
             >Add</button>
             </CCardHeader>
         <Dryer/>
@@ -198,7 +198,7 @@
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn26"
             >Add</button>
             </CCardHeader>
     <clothingCareSystem/>
@@ -206,7 +206,7 @@
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn27"
             >Add</button>
             </CCardHeader>
     <homeSecuirtyCamera/>
@@ -214,7 +214,7 @@
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn28"
             >Add</button>
             </CCardHeader>
       <safetyBox/>
@@ -222,7 +222,7 @@
 
       <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn29"
             >Add</button>
             </CCardHeader>
          <doorLock/>
@@ -230,7 +230,7 @@
 
        <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn30"
             >Add</button>
             </CCardHeader>
            <SecurityAlarm/>
@@ -238,7 +238,7 @@
 
        <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn31"
             >Add</button>
             </CCardHeader>
       <tempretureSensor/>
@@ -246,7 +246,7 @@
 
        <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn32" 
             >Add</button>
             </CCardHeader>
       <smokeDetector/>
@@ -254,12 +254,13 @@
 
        <CCard>
           <CCardHeader>
-            <button class = "buttons" id = "btn2" @click="btn1()" 
+            <button class = "buttons" id = "btn33"
             >Add</button>
             </CCardHeader>
       <SOS/>
       </CCard>
     </CRow>
+
 
 </div>
 </template>
@@ -336,26 +337,18 @@ export default {
     soundSystem,
     Dryer 
     },
-    methods:{
-             btn1: function(){
-
-          document.getElementById("btn2").style.backgroundColor="green";
-          document.getElementById("btn2").textContent= "Added";
-}
-
-
-    },
-    data: {
-        clicked: false
-    }
+    mounted(){
+  $('.buttons').click(function(){
+  $(this).toggleClass('green');
+});
+},
 }
 </script>
 
 
-
 <style scoped>
 
-.buttons{
+button{
   margin-left: 80px;
   background-color: rgb(7, 75, 131);
   border: none;
@@ -368,18 +361,8 @@ export default {
   font-size: 16px;
 }
 
-
-.unbuttons{
-margin-left: 80px;
-  background-color: rgb(35, 156, 55);
-  border: none;
-  color: white;
-  padding: 10px 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 12px;
-  font-size: 16px;
-}
+.green{
+  background-color:rgb(54, 107, 72);
+  }
 
 </style>
