@@ -340,7 +340,10 @@ export default {
     mounted(){
   $('.buttons').click(function(){
   $(this).toggleClass('green');
+  $(this).text($(this).text() == 'Add' ? 
+  'Added' : 'Add')
 });
+
 },
 }
 </script>
