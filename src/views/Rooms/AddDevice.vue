@@ -1,6 +1,6 @@
 <template>
 <div>
-    <h3 class="device">Add a Device</h3>
+    <h3 class="device">Add Default Devices</h3>
     <br>
 
     <CRow>
@@ -259,8 +259,18 @@
             </CCardHeader>
       <SOS/>
       </CCard>
-    </CRow>
 
+      <CCard>
+          <CCardHeader>
+            <button class = "buttons" id = "btn34"
+            >Add</button>
+            </CCardHeader>
+      <modem/>
+      </CCard>
+
+    </CRow>
+<hr>
+    <CButton class="saveBtn" v-on:click="saveChanges()">Save</CButton>
 
 </div>
 </template>
@@ -299,6 +309,7 @@ import  SecurityAlarm from "../devices/SecurityAlarm"
 import  tempretureSensor from "../devices/tempretureSensor"
 import  smokeDetector from "../devices/smokeDetector"
 import  SOS from "../devices/SOS"
+import modem from "../devices/modem"
 
 
 export default {
@@ -335,7 +346,8 @@ export default {
     vanityMirror,
     washingMachine,
     soundSystem,
-    Dryer 
+    Dryer,
+    modem,
     },
     mounted(){
   $('.buttons').click(function(){
@@ -351,7 +363,7 @@ export default {
 
 <style scoped>
 
-button{
+.buttons{
   margin-left: 80px;
   background-color: rgb(7, 75, 131);
   border: none;
@@ -367,5 +379,24 @@ button{
 .green{
   background-color:rgb(54, 107, 72);
   }
+
+.saveBtn{
+  margin-left: 250px;
+  background-color: rgb(190, 54, 54);
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+
+
+
+
 
 </style>
