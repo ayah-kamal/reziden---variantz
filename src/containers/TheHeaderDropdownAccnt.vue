@@ -21,7 +21,7 @@
       <CIcon name="cil-user" /> Profile
     </CDropdownItem>
 
-    <CDropdownItem v-on:click= "logoutMethod">
+    <CDropdownItem v-on:click= "settingsMethod">
       <CIcon name="cil-settings" /> Settings
     </CDropdownItem>
    
@@ -46,6 +46,9 @@ export default {
     },
     profileMethod: function(){
        this.$router.push("../users/User");
+    },
+    settingsMethod: function(){
+      this.$router.push("../pages/Settings");
     }
   }
 }
