@@ -1,4 +1,5 @@
 module.exports = {
+  publicPath: '/reziden---variantz/',
   lintOnSave: false,
   runtimeCompiler: true,
   configureWebpack: {
