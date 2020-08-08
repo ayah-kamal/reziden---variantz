@@ -31,7 +31,8 @@
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "clearCache": "jest --clearCache",
-    "release": "npm-run-all clearCache lint build test:unit test:e2e"
+    "release": "npm-run-all clearCache lint build test:unit test:e2e",
+    "gh-pages-deploy": "node scripts/gh-pages-deploy.js"
   },
   "dependencies": {
     "@coreui/coreui": "^3.2.0",
@@ -64,7 +65,8 @@
     "node-sass": "~4.14.1",
     "npm-run-all": "~4.1.5",
     "sass-loader": "~8.0.2",
-    "vue-template-compiler": "~2.6.11"
+    "vue-template-compiler": "~2.6.11",
+    "execa": "latest"
   },
   "browserslist": [
     "> 1%",
