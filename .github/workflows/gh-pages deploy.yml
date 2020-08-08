@@ -4,7 +4,7 @@
       branches:
         - master
   jobs:
-    gh-pages-deploy:
+    gh-pages deploy:
       name: Deploying to gh-pages
       runs-on: ubuntu-latest
       steps:
@@ -21,4 +21,4 @@
         - name: Run deploy script
           run: |
             git config user.name "ayah-kamal" && git config user.email "ayahk1999@gmail.com"
-            npm run gh-pages-deploy
+            npm run gh-pages deploy
