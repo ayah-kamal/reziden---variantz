@@ -60,7 +60,25 @@
         </CCard>
      
         <CCard class="settings-main-innerbody">
-
+            <div>
+            <label class="settings-headers">Weather Settings</label>
+             <CIcon name="cil-arrow-right" style="margin-left: 505px"/>
+            </div>
+            <hr>
+            <div>
+            <label class="settings-headers">Notifications</label>
+            <CIcon name="cil-arrow-right" style="margin-left: 535px"/>
+            </div>
+            <hr>
+            <div>
+            <label class="settings-headers">Display</label>
+             <CIcon name="cil-arrow-right" style="margin-left: 572px"/>
+            </div>
+            <hr>
+            <div>
+            <label class="settings-headers">Members Access</label>
+            <CIcon name="cil-arrow-right" style="margin-left: 508px"/>
+            </div>
         </CCard>
 
         <CCard class="settings-account-innerbody">
