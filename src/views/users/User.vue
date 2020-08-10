@@ -14,16 +14,21 @@
 
   <CCard class="profile-body">
     <label class="profileHeaders">Phone</label>
+    <br>
     <label class="profileInfo" id="profileInfoPhone">(186)-379-4936</label>
     <hr>
     <label class="profileHeaders">Gender</label>
+    <br>
     <label class="profileInfo" id="profileInfoGender">Female</label>
     <hr>
      <label class="profileHeaders">Date of Birth</label>
+     <br>
     <label class="profileInfo" id="profileInfoBirth">03/11/72</label>
      <hr>
      <label class="profileHeaders">Nationality</label>
+     <br>
     <label class="profileInfo" id="profileInfoNation">American</label>
+    <br>
     <br>
   </CCard>
 
@@ -157,6 +162,14 @@ export default {
 </script>
 
 <style scoped>
+
+.profile{
+width: 20cm;
+height: auto;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
 .username{
   display: flex;
   justify-content: center;
@@ -176,6 +189,11 @@ export default {
 
 .profile-body{
   background-color: rgb(82, 103, 146);
+  width: 20cm;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .profileHeaders{
@@ -195,7 +213,6 @@ export default {
 .editProfilebtn {
 	background-color:#b8b8b8;
 	border-radius:15px;
-	display:inline-block;
 	cursor:pointer;
 	color:black;
 	font-family:Arial;
@@ -206,8 +223,9 @@ export default {
   padding-bottom: 10px;
 	text-decoration:none;
   text-align: center;
-  margin-left: 20px;
-  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .editProfileTitle{
@@ -240,5 +258,12 @@ export default {
   margin-top: 15px;
 }
 
+.mt-2{
+    width: 20cm;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 </style>

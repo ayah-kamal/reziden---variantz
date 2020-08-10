@@ -96,6 +96,9 @@ import {
   cilKeyboard,
   cilPlus,
   cilBellExclamation,
+  cilArrowCircleRight,
+  cilArrowThickToRight,
+ 
 
   
 
@@ -177,6 +180,8 @@ export const iconsSet = Object.assign(
     cilKeyboard,
     cilPlus,
     cilBellExclamation,
+    cilArrowCircleRight,
+    cilArrowThickToRight
 
     
     
