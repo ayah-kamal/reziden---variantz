@@ -2,24 +2,6 @@
     
 <CRow class="rowStyle">
         <CCard>
-          <h4 class = "title">Air Conditioning</h4>
-        <img  class = "deviceImage" src="https://www.tristar.eu/product/image/medium/ac-5408_0.jpg" alt="">
-  
-   <div class="onoffswitch">
-    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2" tabindex="0" checked>
-    <label class="onoffswitch-label" for="myonoffswitch2">
-        <span class="onoffswitch-inner"></span>
-        <span class="onoffswitch-switch"></span>
-    </label>
-
-</div>
-
-</CCard>
-</CRow>
-</template><template>
-    
-<CRow class="rowStyle">
-        <CCard>
 
          <h4 class = "title" >Air Conditioning</h4>
                 
@@ -36,19 +18,30 @@
         <CCollapse :show="innerCollapse" class="mt-2">
           <CCard body-wrapper>
 
-            <h4>more options:</h4>
+            <h4>More Options:</h4>
             <hr>
  
 <label class = "editLabel" for="customRange2">Speed:</label>
 <input type="range" class="slider" min="0" max="5" id="customRange2">
 
 <hr>
-<select class="form-select">
-  <option selected>Open this select menu</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-</select>
+<label class = "editLabel" >Mode:</label>
+
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button type="radio" class="buttons">Cool</button>
+  <button type="radio" class="buttons">Dry</button>
+  <button type="radio" class="buttons">Fan</button>
+  <button type="radio" class="buttons">Hot</button>
+</div>
+
+<hr>
+
+<div>
+<label class="editLabel">Temperature:</label>
+<input style="padding-right:20px; text-align:right; width: 50px;margin-left:10px;border: none;border-bottom: 1px solid black">
+<span style="margin-left:-20px;">°C</span>
+</div>
+
           </CCard>
         </CCollapse>
    <div class="onoffswitch">
@@ -70,37 +63,44 @@ data () {
     return {
       innerCollapse: false,
     }
+},
+  mounted(){
+  $('.buttons').click(function(){
+  $(".buttons").removeClass("blue");
+    $(this).addClass("blue");
+});
+$('.optBtn').click(function(){
+  $(this).toggleClass('green');
+});
+  },
 }
-
-
-}
-
-function range(id){
-    
-  
-getElementById(id).ionRangeSlider({
-    min: 100,
-    max: 1000,
-    from: 550
-  });
-  }
 </script>
 
 
 
-<style>
+<style scoped>
 .optBtn {
-  background-color: #4CAF50;
-  border: none;
+  background-color:#4F7FBF;
   color: white;
-  width:50%;
-  height: 50%;
   text-align: center;
   display: inline-block;
   font-size: 10px;
+}
 
+.green{
+  background-color:rgb(54, 107, 72);
+  }
 
- 
+.buttons{
+    border: none;
+    background-color: rgb(216, 216, 216);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.blue{
+    background-color: rgb(91, 150, 238);
 }
  
 .editLabel{
@@ -117,4 +117,6 @@ getElementById(id).ionRangeSlider({
 .slider{
 vertical-align: middle;
 }
+
+
 </style>
