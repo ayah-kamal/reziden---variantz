@@ -2,7 +2,7 @@
     <CRow class="rowStyle">
         <CCard>
           <h4 class = "title">Vanity TV Mirror</h4>
-        <img  class = "deviceImage" src="VanityMirror.jpeg" alt="">
+        <img  class = "deviceImage" src="vanityMirror.jpeg" alt="">
   
    <div class="onoffswitch">
     <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch4" tabindex="0" checked>
