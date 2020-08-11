@@ -38,6 +38,7 @@
 <br>
 
 <h4>Status</h4>
+<div>
   <div class="wrapper cards">
   <div class="container">
     <div class="card">
@@ -68,17 +69,23 @@
 <br>
 <br>
 <br>
-  
-     <!-- <CElementCover 
+<br>
+<h4></h4>
+<br>
+
+<weatherWidget/>
+
+</div>
+
+<!-- <CElementCover 
         :boundaries="[{ sides: ['top', 'left'], query: '.media-body' }]"
         :opacity="0.8" :center = true
       >
         <h1 class="d-inline">Loading... </h1><CSpinner size="5xl" color="success"/>
       </CElementCover> -->
     </div>
+
 </template>
-
-
 
 
 
@@ -88,6 +95,7 @@ import WidgetsDropdown from './widgets/WidgetsDropdown'
 import WidgetsBrand from './widgets/WidgetsBrand'
 import welcomeMessage from './Welcome/WelcomeMessage'
 import houseImage from './Welcome/HouseImage'
+import weatherWidget from '../components/weather'
 
 
 export default {
@@ -98,11 +106,14 @@ export default {
     WidgetsBrand,
     welcomeMessage,
     houseImage,
+    weatherWidget,
   },
   mounted(){
   $('.card').click(function(){
   $(this).toggleClass('flipped');
 });
+
+
   },
   methods: {
     

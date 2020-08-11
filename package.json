@@ -43,6 +43,7 @@
     "jquery": "^3.5.1",
     "vue": "~2.6.11",
     "vue-append": "^2.0.0",
+    "vue-custom-element": "^3.2.14",
     "vue-router": "~3.3.2",
     "vue-weather-component": "^1.0.0",
     "vue-weather-widget": "^3.0.4",
