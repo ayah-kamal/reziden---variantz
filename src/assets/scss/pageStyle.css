@@ -75,5 +75,28 @@
     border-color: #6f92d1; */
     }
 
+    .editRoombtn{
+        border: none;
+        background-color: rgb(255, 253, 253);
+        font-weight: bold;
+        border-radius: 20px;
+        padding: 10px;
+      }
+
+      .roomNaming{
+        margin-left: 15px;
+        width: 320px;
+        border: none;
+        border-bottom: 2px solid rgba(146, 136, 136, 0.849);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        outline: none;
+        font-family: inherit;
+        font-size: 1.1rem;
+        padding: 7px 0;
+        background: transparent;
+      }
+      
+
  
 

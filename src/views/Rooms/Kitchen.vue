@@ -1,7 +1,23 @@
 
 <template>
   <div>
+      <div style="display: flex; justify-content: space-between">
       <h3 class = "device">Devices</h3>
+      <button
+      @click="innerCollapse = !innerCollapse"
+      class="editRoombtn"
+      >Edit Room Name</button>
+      </div>
+
+      <CCollapse :show="innerCollapse" class="mt-2">
+          <CCard body-wrapper>
+            <h2 id="main" class="printRoomName"></h2>
+         <input 
+         placeholder="Enter new room name" 
+         type="text" 
+         id="roomName" class="roomNaming">
+          </CCard>
+        </CCollapse>
       <hr>
       <CRow >
 
@@ -60,10 +76,12 @@ stoveAndOven,
 dishwasher,
 kettle,
 iceMaker,
-kitchenHood,
-
-
-       
+kitchenHood,      
+  },
+  data () {
+    return {
+      innerCollapse: false,
+    }
   }
 }
 </script>

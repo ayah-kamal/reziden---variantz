@@ -1,7 +1,23 @@
 <template>
   <div>
-    <h3 class="device">Devices</h3>
-    <hr />
+    <div style="display: flex; justify-content: space-between">
+      <h3 class = "device">Devices</h3>
+      <button
+      @click="innerCollapse = !innerCollapse"
+      class="editRoombtn"
+      >Edit Room Name</button>
+      </div>
+
+      <CCollapse :show="innerCollapse" class="mt-2">
+          <CCard body-wrapper>
+            <h2 id="main" class="printRoomName"></h2>
+         <input 
+         placeholder="Enter new room name" 
+         type="text" 
+         id="roomName" class="roomNaming">
+          </CCard>
+        </CCollapse>
+    <hr>
     <CRow>
       <lighting />
 
@@ -13,23 +29,6 @@
       <soundSystem />
 
       <scaler />
-      <!--  
-<CRow class="rowStyle">
-        <CCard>
-          <h4 class = "title">Speaker</h4>
-        <img  class = "deviceImage" src="Speaker.jpg" alt="">
-  
-   <div class="onoffswitch">
-    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch6" tabindex="0" checked>
-    <label class="onoffswitch-label" for="myonoffswitch6">
-        <span class="onoffswitch-inner"></span>
-        <span class="onoffswitch-switch"></span>
-    </label>
-
-</div>
-
-</CCard>
-      </CRow>-->
     </CRow>
   </div>
 </template>
@@ -54,6 +53,11 @@ export default {
     vanityMirror,
     soundSystem,
     scaler
+  },
+  data () {
+    return {
+      innerCollapse: false,
+    }
   }
 };
 </script>
