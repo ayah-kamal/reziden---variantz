@@ -3,12 +3,13 @@
       <CRow class="rowStyle">
         <CCard>
           <h4 class = "title">Lighting</h4>
+          
            <Button  class="optBtn"
           @click="innerCollapse = !innerCollapse; showMessage()" 
           size="sm" 
-          color="secondary"> <!--<img src="moreOption.png" style= "width:30%" alt="">
-     -->
-     more options
+          color="secondary"> 
+          <CIcon name="cil-settings" style="margin-right: 5px"/>
+         More Options
         </Button>
 
         <img class = "deviceImage" src="lighting.jpeg" alt="">
@@ -58,12 +59,14 @@ export default {
     }
 },
  mounted(){
-  $('.buttons').click(function(){
+   $('.optBtn').click(function(){
+  $(this).toggleClass('green');
+
+});
+
+$('.buttons').click(function(){
   $(".buttons").removeClass("blue");
     $(this).addClass("blue");
-});
-$('.optBtn').click(function(){
-  $(this).toggleClass('green');
 });
   },
 
@@ -78,6 +81,7 @@ $('.optBtn').click(function(){
   text-align: center;
   display: inline-block;
   font-size: 10px;
+  border: none;
 }
 
 .green{

@@ -8,9 +8,9 @@
         <Button  class="optBtn"
           @click="innerCollapse = !innerCollapse; showMessage()" 
           size="sm" 
-          color="secondary"> <!--<img src="moreOption.png" style= "width:30%" alt="">
-     -->
-     more options
+          color="secondary"> 
+          <CIcon name="cil-settings" style="margin-right: 5px"/>
+         More Options
         </Button>
 
     <img  class = "deviceImage" src="https://www.tristar.eu/product/image/medium/ac-5408_0.jpg" alt="">
@@ -66,25 +66,25 @@
 
 <script>
 export default {
-  data () {
+    data () {
     return {
       innerCollapse: false,
     }
 },
-  mounted(){
+ mounted(){
+   $('.optBtn').click(function(){
+  $(this).toggleClass('green');
+
   $('.buttons').click(function(){
   $(".buttons").removeClass("blue");
     $(this).addClass("blue");
 });
-$('.optBtn').click(function(){
-  $(this).toggleClass('green');
 });
   },
 
-  
-  
 }
 </script>
+
 
 <style scoped>
 .optBtn {
@@ -93,6 +93,7 @@ $('.optBtn').click(function(){
   text-align: center;
   display: inline-block;
   font-size: 10px;
+  border: none;
 }
 
 .green{

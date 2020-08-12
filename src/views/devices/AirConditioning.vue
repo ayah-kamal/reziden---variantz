@@ -8,9 +8,9 @@
         <Button  class="optBtn"
           @click="innerCollapse = !innerCollapse; showMessage()" 
           size="sm" 
-          color="secondary"> <!--<img src="moreOption.png" style= "width:30%" alt="">
-     -->
-     more options
+          color="secondary"> 
+          <CIcon name="cil-settings" style="margin-right: 5px"/>
+         More Options
         </Button>
 
     <img  class = "deviceImage" src="https://www.tristar.eu/product/image/medium/ac-5408_0.jpg" alt="">
@@ -38,7 +38,7 @@
 
 <div>
 <label class="editLabel">Temperature:</label>
-<input style="padding-right:20px; text-align:right; width: 50px;margin-left:10px;border: none;border-bottom: 1px solid black">
+<input placeholder="24" style="padding-right:20px; text-align:right; width: 50px;margin-left:10px;border: none;border-bottom: 1px solid black">
 <span style="margin-left:-20px;">°C</span>
 </div>
 
@@ -58,21 +58,23 @@
 </template>
 
 <script>
-export default{
-data () {
+export default {
+    data () {
     return {
       innerCollapse: false,
     }
 },
-  mounted(){
+ mounted(){
+   $('.optBtn').click(function(){
+  $(this).toggleClass('green');
+
   $('.buttons').click(function(){
   $(".buttons").removeClass("blue");
     $(this).addClass("blue");
 });
-$('.optBtn').click(function(){
-  $(this).toggleClass('green');
 });
   },
+
 }
 </script>
 
@@ -85,6 +87,7 @@ $('.optBtn').click(function(){
   text-align: center;
   display: inline-block;
   font-size: 10px;
+  border: none;
 }
 
 .green{
