@@ -13,7 +13,7 @@
          More Options
         </Button>
 
-    <img  class = "deviceImage" src="https://www.tristar.eu/product/image/medium/ac-5408_0.jpg" alt="">
+    <img  class = "deviceImage" src="curtains.jpeg" alt="">
   
         <CCollapse :show="innerCollapse" class="mt-2">
           <CCard body-wrapper>
