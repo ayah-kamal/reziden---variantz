@@ -1,6 +1,6 @@
 <template>
   <div>
-<CAlert class="laundryInfo" color="warning" closeButton>
+<CAlert class="notifInfo" color="warning" closeButton>
    
 
       <h3 style="margin-bottom: 30px;  background-color: rgba(240, 214, 68, 0.705); color: warning; padding: 5px">Notifications</h3>
@@ -151,7 +151,7 @@ export default {
 <style>
   @import '../../assets/scss/pageStyle.css';
 
-.laundryInfo{
+.notifInfo{
   width: 70vw;
   padding: 20px;
 }
