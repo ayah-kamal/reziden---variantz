@@ -1,9 +1,12 @@
 <template>
   <div>
+
 <CAlert class="notifInfo" color="warning" closeButton>
    
 
-      <h3 style="margin-bottom: 30px;  background-color: rgba(240, 214, 68, 0.705); color: warning; padding: 5px">Notifications</h3>
+      <h3 
+      style="margin-bottom: 30px;  background-color: rgba(240, 214, 68, 0.705); color: warning; padding: 5px">
+      Notifications</h3>
       
 
       <CRow>
@@ -25,6 +28,7 @@
       <p>Load:</p>
       <label class="currentCycleLabel">12kg</label>
       </div>
+
       
 
       <div>
@@ -101,6 +105,7 @@
         </CCollapse>
 
       <hr>
+
       <CRow>
    <lighting/>
    <curtains/>
@@ -117,6 +122,7 @@
 
   </div>
 </template>
+
 
 
 <script>
@@ -176,7 +182,5 @@ export default {
   border-radius: 20px;
   padding: 5px;
 }
-
-
 
 </style>
