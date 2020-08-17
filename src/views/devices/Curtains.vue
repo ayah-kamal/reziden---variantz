@@ -134,5 +134,9 @@ export default {
   color: #4F7FBF;
 }
 
+input{
+  width: 60px;
+}
+
 </style>
 
