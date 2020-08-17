@@ -1,8 +1,9 @@
 <template>
-<div>
+<div class="main-container">
     <h2 class="mainTitle">Energy Consumption</h2>
 
-    <div class="d-flex flex-wrap">
+    <!-- <div class="d-flex flex-wrap"> -->
+    <div class="MainEnergyConsumptionContainer">
     <div class="EnergyConsumptionContainer">
 
     <CTabs variant="tabs" :active-tab="1">
@@ -11,11 +12,11 @@
     
       <CChartLine
     style="height:300px;
-    min-width: 39vw"
+    max-width: 500px"
     :datasets="[
       {
-        data: [12, 22, 34, 46, 58, 70, 46, 23, 45, 78, 34, 12,
-        10, 22, 34, 46, 58, 70, 46, 23, 45, 78, 34, 12],
+        data: [12, 22, 34, 46, 58, 70, 46, 43, 45, 78, 34, 30,
+        35, 32, 39, 46, 58, 70, 46, 41, 45, 78, 34, 12],
         backgroundColor: 'rgb(252, 249, 110)',
         label: 'Energy Consumption Level',
       }
@@ -30,7 +31,7 @@
         <h5>Week: 3</h5>
     <CChartLine
     style="height:300px;
-    min-width: 39vw"
+    max-width: 500px"
     :datasets="[
       {
         data: [200, 210, 190, 200, 250, 300, 320],
@@ -46,10 +47,10 @@
         <h5 class="graphTabTitles">Year: 2019</h5>
          <CChartLine
     style="height:300px;
-    min-width: 40vw"
+    max-width: 500px"
     :datasets="[
       {
-        data: [13, 18, 22, 32, 48, 70, 78, 89, 92, 78, 34, 12],
+        data: [612, 603, 696, 764, 806, 967, 1050, 1104, 1003, 932, 887, 732],
         backgroundColor: 'rgb(252, 249, 110)',
         label: 'Energy Consumption Level',
       }
@@ -66,10 +67,10 @@
       <h4 style="margin-left: 2vw">Devices:</h4>
       <h6 style="margin-left: 2vw"><i>(per year: 2019)</i></h6>
       <br>
-      <CCol>
-      <CRow class="devicesTiles">
+
+        <div class="devicesGrid">
       <CWidgetSimple class="deviceWidgets" header="Air Conditioning">
-      <label class="deviceText">7,123<br>kWh</label>
+      <label class="deviceText">5,180<br>kWh</label>
         <CProgress
           animated
           color="danger"
@@ -96,18 +97,7 @@
           :value="27"
         />
       </CWidgetSimple>
-      </CRow>
-      <CRow class="devicesTiles">
-      <CWidgetSimple class="deviceWidgets" header="Dryer" >
-      <label class="deviceText">200<br>kWh</label>
-        <CProgress
-          animated
-          color="success"
-          height="0.8rem"
-          :value="37"
-        />
-      </CWidgetSimple>
-   
+
       <CWidgetSimple class="deviceWidgets" header="Dishwasher">
       <label class="deviceText">220<br>kWh</label>
         <CProgress
@@ -126,8 +116,6 @@
           :value="30"
         />
       </CWidgetSimple>
-      </CRow>
-      <CRow class="devicesTiles">
       <CWidgetSimple class="deviceWidgets" header="Lighting">
       <label class="deviceText">1,105<br>kWh</label>
         <CProgress
@@ -137,8 +125,8 @@
           :value="60"
         />
       </CWidgetSimple>
-      </CRow>
-      </CCol>
+      </div>
+
       <label style="margin-left: 2vw;
       font-size: 10px"
       >Last Updated: <i>9:29PM 17/08/2020</i></label>
@@ -152,7 +140,7 @@
      <br>
 
     <CAlert color="danger" closeButton fade
-    style="width: 67vw">
+    style="width: 80vw">
     <CIcon name="cilBellExclamation" style="float: left"/>
     <h6>Monthly Report:</h6>
     There is a noticable rise in energy consumption during summer months.<br>
@@ -167,7 +155,7 @@
   </CAlert>
 
   <CAlert color="warning" closeButton fade
-    style="width: 67vw">
+    style="width: 80vw">
     <CIcon name="cilBellExclamation" style="float: left"/>
     <h6>Hourly Report:</h6>
     You can decrease <i><b>Lighting</b></i> energy consumption 
@@ -226,6 +214,12 @@ export default {
 </script>
 
 <style scoped>
+.main-container{
+justify-content: center;
+width: fit-content;
+height: auto;
+}
+
 .mainTitle{
     background-color: rgb(78, 99, 128);
     color: rgb(210, 224, 230);
@@ -234,10 +228,17 @@ export default {
     margin-bottom: 30px;
 }
 
+.MainEnergyConsumptionContainer{
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 75vw;
+  height: auto;
+}
+
 .EnergyConsumptionContainer{
     display: inline-block;
     background-color: rgb(255, 255, 255);
-    max-width: 80vw;
+    min-width: 33vw;
     padding: 20px;
     margin-right: 33px;
     margin-bottom: 20px;
@@ -250,8 +251,8 @@ export default {
 .devicesEnergy{
   display: inline-block;
   background-color: rgb(255, 255, 255);
-  max-width: 80vw;
   padding: 20px;
+  min-width: 33vw;
   margin-bottom: 20px;
 }
 
@@ -260,17 +261,23 @@ export default {
 }
 
 .deviceWidgets{
-  overflow: hidden;
   margin-right: 40px;
   width: 112px;
   background-color: rgb(210, 224, 230);
- font-size: smaller;
+  font-size: smaller;
 }
 
 .deviceText{
   font-weight: bolder;
   font-size: 15px;
   margin-top: 5px;
+}
+
+.devicesGrid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 3px;
+
 }
 
 </style>
