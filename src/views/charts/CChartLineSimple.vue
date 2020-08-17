@@ -2,7 +2,7 @@
   <CChartLine
     :datasets="computedDatasets"
     :options="computedOptions"
-    :labels="labels"
+    :labels="['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su']"
   />
 </template>
 

@@ -6,11 +6,14 @@ import CoreuiVue from '@coreui/vue'
 import { iconsSet as icons } from './assets/icons/icons.js'
 import store from './store'
 import JQuery from 'jquery'
+import CoreuiVueCharts from '@coreui/vue-chartjs'
+
 
 window.$ = JQuery
 
 Vue.config.performance = true
 Vue.use(CoreuiVue)
+Vue.use(CoreuiVueCharts)
 Vue.prototype.$log = console.log.bind(console)
 
 

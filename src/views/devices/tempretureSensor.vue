@@ -2,7 +2,7 @@
     <CRow class="rowStyle">
         <CCard>
           <h4 class = "title">Temperature Sensor</h4>
-        <img  class = "deviceImage" src="Tem_sensor.jpg" alt="">
+        <img  class = "deviceImage" src="tem_sensor.jpg" alt="">
   
    <div class="onoffswitch">
     <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch4" tabindex="0" checked>

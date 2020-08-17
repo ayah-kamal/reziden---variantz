@@ -15,7 +15,7 @@ export default [
       {
         _name: 'CSidebarNavItem',
         name: 'Energy and Utilities',
-        to: '/energy',
+        to: '/energy-and-utilities',
         icon: 'cil-eco',
       },
       {

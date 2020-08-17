@@ -6,7 +6,7 @@ const TheContainer = () => import('@/containers/TheContainer')
 
 // Views
 const Dashboard = () => import('@/views/Dashboard')
-const Energy = () => import('@/views/Energy')
+const EnergyAndUtilities = () => import('@/views/EnergyAndUtilities')
 
 //Pages
 const Login = () => import('@/views/pages/Login')
@@ -61,11 +61,11 @@ function configRoutes () {
           component: Dashboard
         }, 
         {
-          path: 'energy',
+          path: 'energy-and-utilities',
           name: 'Energy and Utilities',
-          component: Energy
+          component: EnergyAndUtilities
         }, 
-        
+
         {
           path: '/Rooms',
           name: 'Rooms',
