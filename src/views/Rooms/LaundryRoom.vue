@@ -158,7 +158,7 @@ export default {
   @import '../../assets/scss/pageStyle.css';
 
 .notifInfo{
-  width: 70vw;
+  min-width: 70vw;
   padding: 20px;
 }
 
@@ -172,7 +172,7 @@ export default {
 }
 
 .laundryNotif{
-  width: 31vw;
+  min-width: 31vw;
   background-color: rgb(240, 239, 239);
   border-radius: 20px;
   padding: 10px;
