@@ -33,7 +33,7 @@
     min-width: 39vw"
     :datasets="[
       {
-        data: [13, 18, 22, 32, 48, 70, 78],
+        data: [200, 210, 190, 200, 250, 300, 320],
         backgroundColor: 'rgb(252, 249, 110)',
         label: 'Energy Consumption Level',
       }
@@ -46,7 +46,7 @@
         <h5 class="graphTabTitles">Year: 2019</h5>
          <CChartLine
     style="height:300px;
-    min-width: 39vw"
+    min-width: 40vw"
     :datasets="[
       {
         data: [13, 18, 22, 32, 48, 70, 78, 89, 92, 78, 34, 12],
@@ -68,8 +68,8 @@
       <br>
       <CCol>
       <CRow class="devicesTiles">
-      <CWidgetSimple class="deviceWidgets" header="Air Conditioning" text="7,123
-      kWh">
+      <CWidgetSimple class="deviceWidgets" header="Air Conditioning">
+      <label class="deviceText">7,123<br>kWh</label>
         <CProgress
           animated
           color="danger"
@@ -77,8 +77,8 @@
           :value="80"
         />
       </CWidgetSimple>
-      <CWidgetSimple class="deviceWidgets" header="'Living Room' TV" text="90
-      kWh">
+      <CWidgetSimple class="deviceWidgets" header="'Living Room' TV">
+      <label class="deviceText">90<br>kWh</label>
         <CProgress
           animated
           color="success"
@@ -87,8 +87,8 @@
         />
       </CWidgetSimple>
 
-      <CWidgetSimple class="deviceWidgets" header="Washing Machine" text="180
-      kWh">
+      <CWidgetSimple class="deviceWidgets" header="Washing Machine">
+      <label class="deviceText">180<br>kWh</label>
         <CProgress
           animated
           color="success"
@@ -98,8 +98,8 @@
       </CWidgetSimple>
       </CRow>
       <CRow class="devicesTiles">
-      <CWidgetSimple class="deviceWidgets" header="Dryer" text="200
-      kWh">
+      <CWidgetSimple class="deviceWidgets" header="Dryer" >
+      <label class="deviceText">200<br>kWh</label>
         <CProgress
           animated
           color="success"
@@ -108,8 +108,8 @@
         />
       </CWidgetSimple>
    
-      <CWidgetSimple class="deviceWidgets" header="Dishwasher" text="220
-      kWh">
+      <CWidgetSimple class="deviceWidgets" header="Dishwasher">
+      <label class="deviceText">220<br>kWh</label>
         <CProgress
           animated
           color="success"
@@ -117,8 +117,8 @@
           :value="45"
         />
       </CWidgetSimple>
-      <CWidgetSimple class="deviceWidgets" header="Fridge" text="190
-      kWh">
+      <CWidgetSimple class="deviceWidgets" header="Fridge">
+      <label class="deviceText">190<br>kWh</label>
         <CProgress
           animated
           color="success"
@@ -128,8 +128,8 @@
       </CWidgetSimple>
       </CRow>
       <CRow class="devicesTiles">
-      <CWidgetSimple class="deviceWidgets" header="Lighting" text="1,105
-      kWh">
+      <CWidgetSimple class="deviceWidgets" header="Lighting">
+      <label class="deviceText">1,105<br>kWh</label>
         <CProgress
           animated
           color="warning"
@@ -202,6 +202,7 @@
         </div>
     </CModal>
 
+   <h2 class="mainTitle"></h2>
 
 
     </div>
@@ -229,14 +230,14 @@ export default {
     background-color: rgb(78, 99, 128);
     color: rgb(210, 224, 230);
     padding: 10px;
-    max-width: 67vw;
+    max-width: 75vw;
     margin-bottom: 30px;
 }
 
 .EnergyConsumptionContainer{
     display: inline-block;
     background-color: rgb(255, 255, 255);
-    max-width: 70vw;
+    max-width: 80vw;
     padding: 20px;
     margin-right: 33px;
     margin-bottom: 20px;
@@ -249,7 +250,7 @@ export default {
 .devicesEnergy{
   display: inline-block;
   background-color: rgb(255, 255, 255);
-  max-width: 50vw;
+  max-width: 80vw;
   padding: 20px;
   margin-bottom: 20px;
 }
@@ -259,9 +260,17 @@ export default {
 }
 
 .deviceWidgets{
+  overflow: hidden;
   margin-right: 40px;
-  width: 130px;
+  width: 112px;
   background-color: rgb(210, 224, 230);
+ font-size: smaller;
+}
+
+.deviceText{
+  font-weight: bolder;
+  font-size: 15px;
+  margin-top: 5px;
 }
 
 </style>

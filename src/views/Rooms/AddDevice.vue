@@ -2,8 +2,15 @@
 <div>
     <h3 class="device">Add Default Devices</h3>
     <br>
+   <div class="input-group" style="margin-left: 10px">
+      <input type="text" class="form-control" placeholder="Search for a device..." aria-label="Search for a device...">
+    <span class="input-group-btn">
+        <button class="btn btn-secondary" type="button">Search</button>
+      </span>
+    </div>
+    <br>
 
-    <CRow>
+    <CRow style="margin-left: 10px">
         <CCard>
             <CCardHeader>
             <button class="buttons" id = "btn2" 
