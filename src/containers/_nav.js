@@ -13,6 +13,12 @@ export default [
         }*/
       },
       {
+        _name: 'CSidebarNavItem',
+        name: 'Energy and Utilities',
+        to: '/energy',
+        icon: 'cil-eco',
+      },
+      {
         _name: 'CSidebarNavTitle',
         _children: ['Profile']
       },

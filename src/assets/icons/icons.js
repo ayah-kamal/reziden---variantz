@@ -100,7 +100,8 @@ import {
   cilArrowThickToRight,
   cilApplicationsSettings,
   cilAppsSettings,
-  cilVolumeOff
+  cilVolumeOff,
+  cilEco
 
  
 
@@ -188,7 +189,8 @@ export const iconsSet = Object.assign(
     cilArrowThickToRight,
     cilApplicationsSettings,
     cilAppsSettings,
-    cilVolumeOff
+    cilVolumeOff,
+    cilEco
 
 
     

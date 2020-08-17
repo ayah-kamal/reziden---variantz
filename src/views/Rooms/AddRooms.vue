@@ -12,6 +12,7 @@
 <br>
   <label class="choose" for="roomName">Choose the name for your new room:</label>
   <br>
+  <br>
   <input placeholder="Enter room name" type="text" id="roomName" class="roomNaming">
 
       </CCol>
