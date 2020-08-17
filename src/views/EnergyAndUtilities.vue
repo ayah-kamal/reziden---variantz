@@ -11,7 +11,7 @@
     
       <CChartLine
     style="height:300px;
-    width: 600px"
+    min-width: 39vw"
     :datasets="[
       {
         data: [12, 22, 34, 46, 58, 70, 46, 23, 45, 78, 34, 12,
@@ -30,7 +30,7 @@
         <h5>Week: 3</h5>
     <CChartLine
     style="height:300px;
-    width: 600px"
+    min-width: 39vw"
     :datasets="[
       {
         data: [13, 18, 22, 32, 48, 70, 78],
@@ -46,7 +46,7 @@
         <h5 class="graphTabTitles">Year: 2019</h5>
          <CChartLine
     style="height:300px;
-    width: 600px"
+    min-width: 39vw"
     :datasets="[
       {
         data: [13, 18, 22, 32, 48, 70, 78, 89, 92, 78, 34, 12],
@@ -68,16 +68,6 @@
       <br>
       <CCol>
       <CRow class="devicesTiles">
-      <CWidgetSimple class="deviceWidgets" header="Lighting" text="1,105
-      kWh">
-        <CProgress
-          animated
-          color="warning"
-          height="0.8rem"
-          :value="60"
-        />
-      </CWidgetSimple>
-   
       <CWidgetSimple class="deviceWidgets" header="Air Conditioning" text="7,123
       kWh">
         <CProgress
@@ -137,6 +127,17 @@
         />
       </CWidgetSimple>
       </CRow>
+      <CRow class="devicesTiles">
+      <CWidgetSimple class="deviceWidgets" header="Lighting" text="1,105
+      kWh">
+        <CProgress
+          animated
+          color="warning"
+          height="0.8rem"
+          :value="60"
+        />
+      </CWidgetSimple>
+      </CRow>
       </CCol>
       <label style="margin-left: 2vw;
       font-size: 10px"
@@ -151,7 +152,7 @@
      <br>
 
     <CAlert color="danger" closeButton fade
-    style="width: 750px">
+    style="width: 67vw">
     <CIcon name="cilBellExclamation" style="float: left"/>
     <h6>Monthly Report:</h6>
     There is a noticable rise in energy consumption during summer months.<br>
@@ -166,7 +167,7 @@
   </CAlert>
 
   <CAlert color="warning" closeButton fade
-    style="width: 750px">
+    style="width: 67vw">
     <CIcon name="cilBellExclamation" style="float: left"/>
     <h6>Hourly Report:</h6>
     You can decrease <i><b>Lighting</b></i> energy consumption 
@@ -248,7 +249,7 @@ export default {
 .devicesEnergy{
   display: inline-block;
   background-color: rgb(255, 255, 255);
-  min-width: 640px;
+  max-width: 50vw;
   padding: 20px;
   margin-bottom: 20px;
 }
