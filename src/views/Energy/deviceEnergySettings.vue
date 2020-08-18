@@ -44,6 +44,7 @@
             style="margin-right: 55px;
             font-weight: bold">Set Limit:</label>
             <input class="limit" id="limit" type="number" min="1" max="1000">
+            <span style="margin-left: 10px">kWh</span>
           </CCardBody>
         </CCollapse>
       </template>
@@ -56,18 +57,18 @@
 
 <script>
 const items = [
-  { appliance: 'Air Conditioning', status: 'Remain ON when energy reaches limit', limit: 'Active'},
-    { appliance: 'Curtains', status: 'Remain ON when energy reaches limit', limit: 'Active'},
-    { appliance: 'Lighting', status: 'Turn OFF when energy exceeds limit', limit: 'Inactive'},
-    { appliance: 'Washing Machine', status: 'Turn OFF when energy exceeds limit', limit: 'Active'},
-    { appliance: 'Television', status: 'Turn OFF when energy exceeds limit', limit: 'Pending'},
-    { appliance: 'Fridge', status: 'Remain ON when energy reaches limit', limit: 'Pending'},
-    { appliance: 'Air Fryer', status: 'Turn OFF when energy exceeds limit', limit: 'Pending'},
-    { appliance: 'Coffee Machine', status: 'Turn OFF when energy exceeds limit', limit: 'Pending'},
-    { appliance: 'Dryer', status: 'Turn OFF when energy exceeds limit', limit: 'Pending'},
-    { appliance: 'Heater', status: 'Remain ON when energy reaches limit', limit: 'Pending'},
-    { appliance: 'Stove', status: 'Turn OFF when energy exceeds limit', limit: 'Pending'},
-    { appliance: 'Modem', status: 'Remain ON when energy reaches limit', limit: 'Pending'},
+  { appliance: 'Air Conditioning', status: 'Remain ON when energy reaches limit', limit: '320'},
+    { appliance: 'Curtains', status: 'Remain ON when energy reaches limit', limit: '-'},
+    { appliance: 'Lighting', status: 'Turn OFF when energy exceeds limit', limit: '-'},
+    { appliance: 'Washing Machine', status: 'Turn OFF when energy exceeds limit', limit: '150'},
+    { appliance: 'Television', status: 'Turn OFF when energy exceeds limit', limit: '190'},
+    { appliance: 'Fridge', status: 'Remain ON when energy reaches limit', limit: '-'},
+    { appliance: 'Air Fryer', status: 'Turn OFF when energy exceeds limit', limit: '320'},
+    { appliance: 'Coffee Machine', status: 'Turn OFF when energy exceeds limit', limit: '320'},
+    { appliance: 'Dryer', status: 'Turn OFF when energy exceeds limit', limit: '150'},
+    { appliance: 'Heater', status: 'Remain ON when energy reaches limit', limit: '190'},
+    { appliance: 'Stove', status: 'Turn OFF when energy exceeds limit', limit: '320'},
+    { appliance: 'Modem', status: 'Remain ON when energy reaches limit', limit: '-'},
 ]
 
 const fields = [
