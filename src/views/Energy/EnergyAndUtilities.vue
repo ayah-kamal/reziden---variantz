@@ -234,7 +234,7 @@ export default {
   },
   methods: {
     routeToSettings: function () {
-      this.$router.push('./pages/Settings');
+      this.$router.push('../pages/Settings');
     },
     routeToEnergySettings: function(){
       this.$router.push('./device-energy-settings');

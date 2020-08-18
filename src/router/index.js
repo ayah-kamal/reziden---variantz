@@ -79,9 +79,9 @@ function configRoutes () {
        },
        {
         path: 'device-energy-settings',
-        name: 'Settings',
+        name: 'Energy Settings',
         component: DeviceEnergySettings    
- },
+        },
           ]
         },
         
