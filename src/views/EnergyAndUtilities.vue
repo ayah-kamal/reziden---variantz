@@ -1,8 +1,10 @@
 <template>
-<div class="main-container">
+<div>
     <h2 class="mainTitle">Energy Consumption</h2>
 
-    <!-- <div class="d-flex flex-wrap"> -->
+<div class="main-container">
+   
+
     <div class="MainEnergyConsumptionContainer">
     <div class="EnergyConsumptionContainer">
 
@@ -15,9 +17,9 @@
     max-width: 500px"
     :datasets="[
       {
-        data: [12, 22, 34, 46, 58, 70, 46, 43, 45, 78, 34, 30,
-        35, 32, 39, 46, 58, 70, 46, 41, 45, 78, 34, 12],
-        backgroundColor: 'rgb(252, 249, 110)',
+        data: [12, 22, 24, 36, 48, 50, 36, 33, 35, 48, 24, 20,
+        25, 22, 29, 36, 48, 54, 36, 31, 35, 58, 44, 22],
+        backgroundColor: 'rgb(235, 182, 36)',
         label: 'Energy Consumption Level',
       }
     ]"
@@ -34,8 +36,8 @@
     max-width: 500px"
     :datasets="[
       {
-        data: [200, 210, 190, 200, 250, 300, 320],
-        backgroundColor: 'rgb(252, 249, 110)',
+        data: [20, 21, 19, 20, 25, 30, 32],
+        backgroundColor: 'rgb(235, 182, 36)',
         label: 'Energy Consumption Level',
       }
     ]"
@@ -51,7 +53,7 @@
     :datasets="[
       {
         data: [612, 603, 696, 764, 806, 967, 1050, 1104, 1003, 932, 887, 732],
-        backgroundColor: 'rgb(252, 249, 110)',
+        backgroundColor: 'rgb(235, 182, 36)',
         label: 'Energy Consumption Level',
       }
     ]"
@@ -60,6 +62,28 @@
   />
     </CTab>
   </CTabs>
+
+   <div class="monthEnergy">
+  <CWidgetProgress
+        class="monthEnergyWidget"
+        header="July"
+        text="Limit Set: 800kWh"
+        footer=""
+        color="secondary"
+        :value="89"
+      />
+      <CWidgetProgress
+        class="monthEnergyWidget"
+        header="June"
+        text="Limit Set: 795kWh"
+        footer=""
+        color="secondary"
+        :value="75"
+      />
+   </div>
+   <label style="margin-left: 2vw;
+      font-size: 10px"
+      >Last Updated: <i>9:29PM 17/08/2020</i></label>
    </div>
 
 
@@ -125,13 +149,18 @@
           :value="60"
         />
       </CWidgetSimple>
+
       </div>
 
       <label style="margin-left: 2vw;
       font-size: 10px"
       >Last Updated: <i>9:29PM 17/08/2020</i></label>
+      <br>
+      <CButton class="settingBtn" @click="routeToEnergySettings()"><CIcon name="cil-settings" 
+      style="margin-right: 10px"/>Settings</CButton>
     </div>
 
+      
     </div>
 
     
@@ -140,7 +169,7 @@
      <br>
 
     <CAlert color="danger" closeButton fade
-    style="width: 80vw">
+    style="width: 100%">
     <CIcon name="cilBellExclamation" style="float: left"/>
     <h6>Monthly Report:</h6>
     There is a noticable rise in energy consumption during summer months.<br>
@@ -155,7 +184,7 @@
   </CAlert>
 
   <CAlert color="warning" closeButton fade
-    style="width: 80vw">
+    style="width: 100%">
     <CIcon name="cilBellExclamation" style="float: left"/>
     <h6>Hourly Report:</h6>
     You can decrease <i><b>Lighting</b></i> energy consumption 
@@ -190,10 +219,9 @@
         </div>
     </CModal>
 
-   <h2 class="mainTitle"></h2>
-
-
     </div>
+      <h2 class="mainTitle"></h2>
+</div>
 </template>
 
 
@@ -207,6 +235,9 @@ export default {
   methods: {
     routeToSettings: function () {
       this.$router.push('./pages/Settings');
+    },
+    routeToEnergySettings: function(){
+      this.$router.push('./pages/device-energy-settings');
     }
   }
   
@@ -215,30 +246,31 @@ export default {
 
 <style scoped>
 .main-container{
-justify-content: center;
-width: fit-content;
-height: auto;
+display: inline-flex;
+justify-content: space-between;
+align-items: flex-start;
+flex-direction: column;
 }
 
 .mainTitle{
     background-color: rgb(78, 99, 128);
     color: rgb(210, 224, 230);
     padding: 10px;
-    max-width: 75vw;
+    max-width: 100%;
     margin-bottom: 30px;
 }
 
 .MainEnergyConsumptionContainer{
   display: inline-flex;
-  flex-wrap: wrap;
-  width: 75vw;
+  /* flex-wrap: wrap; */
+  overflow: auto;
+  width: 100%;
   height: auto;
 }
 
 .EnergyConsumptionContainer{
-    display: inline-block;
     background-color: rgb(255, 255, 255);
-    min-width: 33vw;
+    width: 50%;
     padding: 20px;
     margin-right: 33px;
     margin-bottom: 20px;
@@ -249,10 +281,10 @@ height: auto;
 }
 
 .devicesEnergy{
-  display: inline-block;
+  /* display: inline-block; */
   background-color: rgb(255, 255, 255);
   padding: 20px;
-  min-width: 33vw;
+  width: 40vw;
   margin-bottom: 20px;
 }
 
@@ -261,7 +293,6 @@ height: auto;
 }
 
 .deviceWidgets{
-  margin-right: 40px;
   width: 112px;
   background-color: rgb(210, 224, 230);
   font-size: smaller;
@@ -279,5 +310,31 @@ height: auto;
   gap: 3px;
 
 }
+
+.monthEnergy{
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.monthEnergyWidget{
+  min-width: 15vw;
+  max-width: 17.5vw;
+  background-color: rgb(195, 220, 236);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.settingBtn{
+  margin-left: 2vw;
+  margin-top: 20px;
+  background-color: rgb(235, 182, 36);
+  padding: 5px;
+  color: white;
+  
+}
+
+
 
 </style>

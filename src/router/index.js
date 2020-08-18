@@ -12,6 +12,7 @@ const EnergyAndUtilities = () => import('@/views/EnergyAndUtilities')
 const Login = () => import('@/views/pages/Login')
 const Register = () => import('@/views/pages/Register')
 const Settings = () => import('@/views/pages/Settings')
+const DeviceEnergySettings = () => import('@/views/pages/deviceEnergySettings')
 
 //+
 // Views - Rooms
@@ -63,7 +64,7 @@ function configRoutes () {
         {
           path: 'energy-and-utilities',
           name: 'Energy and Utilities',
-          component: EnergyAndUtilities
+          component: EnergyAndUtilities,
         }, 
 
         {
@@ -168,6 +169,11 @@ function configRoutes () {
         path: 'settings',
         name: 'Settings',
         component: Settings
+        },
+        {
+        path: 'device-energy-settings',
+        name: 'Device Energy Settings',
+        component: DeviceEnergySettings
         }
       ]
     },
