@@ -6,13 +6,16 @@ const TheContainer = () => import('@/containers/TheContainer')
 
 // Views
 const Dashboard = () => import('@/views/Dashboard')
-const EnergyAndUtilities = () => import('@/views/EnergyAndUtilities')
+
 
 //Pages
 const Login = () => import('@/views/pages/Login')
 const Register = () => import('@/views/pages/Register')
 const Settings = () => import('@/views/pages/Settings')
-const DeviceEnergySettings = () => import('@/views/pages/deviceEnergySettings')
+
+//Energy
+const EnergyAndUtilities = () => import('@/views/Energy/EnergyAndUtilities')
+const DeviceEnergySettings = () => import('@/views/Energy/deviceEnergySettings')
 
 //+
 // Views - Rooms
@@ -62,11 +65,26 @@ function configRoutes () {
           component: Dashboard
         }, 
         {
-          path: 'energy-and-utilities',
-          name: 'Energy and Utilities',
-          component: EnergyAndUtilities,
-        }, 
-
+          path: 'energy',
+          redirect: '/energy/energy-and-utilities',
+          name: 'Energy',
+          component: {
+            render (c) { return c('router-view') }
+          },
+          children:[
+            {
+              path: 'energy-and-utilities',
+              name: 'Energy and Utilities',
+              component: EnergyAndUtilities      
+       },
+       {
+        path: 'device-energy-settings',
+        name: 'Settings',
+        component: DeviceEnergySettings    
+ },
+          ]
+        },
+        
         {
           path: '/Rooms',
           name: 'Rooms',
@@ -170,11 +188,6 @@ function configRoutes () {
         name: 'Settings',
         component: Settings
         },
-        {
-        path: 'device-energy-settings',
-        name: 'Device Energy Settings',
-        component: DeviceEnergySettings
-        }
       ]
     },
     {
@@ -198,4 +211,6 @@ function configRoutes () {
     
   ]
 }
+
+
 
