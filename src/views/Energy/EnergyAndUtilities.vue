@@ -68,7 +68,7 @@
         class="monthEnergyWidget"
         header="July"
         text="Limit Set: 800kWh"
-        footer=""
+        footer="Power Usage: 793kWh"
         color="secondary"
         :value="89"
       />
@@ -76,7 +76,7 @@
         class="monthEnergyWidget"
         header="June"
         text="Limit Set: 795kWh"
-        footer=""
+        footer="Power Usage: 706kWh"
         color="secondary"
         :value="75"
       />
