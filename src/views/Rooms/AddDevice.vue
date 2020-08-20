@@ -1,13 +1,45 @@
 <template>
 <div>
     <h3 class="device">Add Default Devices</h3>
-    <br>
+
    <div class="input-group" style="margin-left: 10px">
       <input type="text" class="form-control" placeholder="Search for a device..." aria-label="Search for a device...">
     <span class="input-group-btn">
         <button class="btn btn-secondary" type="button">Search</button>
       </span>
     </div>
+
+    <CButton  class="addDevicebtn"
+       @click="warningModal = true">
+         Add New Device</CButton>
+         
+    <CModal
+      title="Add a New Device"
+      color="secondary"
+      :show.sync="warningModal"
+    >
+      <div>
+        <h5>Manually:</h5>
+        <label for="deviceName">Device Name:</label>
+        <input id="deviceName" type="text" placeholder="Enter name of device"
+        style="margin-left: 40px; width: 200px" required/>
+
+        <br>
+
+        <label for="limitPower">Model Number:</label>
+        <input id="limitPower" type="number" placeholder="Enter the model number"
+        min="1"
+        style="margin-left: 29px; width: 200px" required/>
+
+        <h5 style="margin-top:15px; margin-bottom: -4px">Automatically:</h5>
+        <CButton  class="addDevicebtn" style="padding: 5px 10px">
+         Scan</CButton>
+
+      
+
+        </div>
+    </CModal>
+
     <br>
 
     <CRow style="margin-left: 10px">
@@ -366,6 +398,11 @@ export default {
     modem,
     airPurifiers,
     },
+    data () {
+    return {
+      warningModal: false
+    }
+  },
     mounted(){
   $('.buttons').click(function(){
   $(this).toggleClass('green');
@@ -411,6 +448,29 @@ export default {
   font-size: 16px;
 }
 
+.addDevicebtn {
+	background:linear-gradient(to bottom, #525d72 5%, #383e52 100%);
+	background-color:#495368;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+	padding: 10px 10px;
+  text-decoration:none;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.addDevicebtn:hover {
+	background:linear-gradient(to bottom, #2d4385 5%, #1c366b 100%);
+	background-color:#2d4385;
+}
+.addDevicebtn:active {
+	position:relative;
+	top:1px;
+}
 
 
 

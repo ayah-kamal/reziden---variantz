@@ -26,13 +26,12 @@
           color="secondary"
           class="addDevicebtn"
         >
-          Add New Device
+          Add Devices
         </CButton>
 
         <CCollapse :show="innerCollapse" class="mt-2">
           <CCard body-wrapper>
             <h2 id="main" class="printRoomName"></h2>
-            <hr>
             <device-add/>
           </CCard>
         </CCollapse>
