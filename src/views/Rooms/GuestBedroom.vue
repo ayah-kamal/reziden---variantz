@@ -22,9 +22,8 @@
       <lighting />
       <curtains />
       <airConditioning />
-
-      <TV />
-
+      <TV/>
+      <airPurifiers/>
       <diffuser />
       <alarm />
     </CRow>
@@ -42,6 +41,7 @@ import airConditioning from "../devices/AirConditioning";
 import alarm from "../devices/alarm";
 import diffuser from "../devices/diffuser";
 import TV from "../devices/TV";
+import airPurifiers from "../devices/AirPurifier"
 
 export default {
   name: "GuestBedroom",
@@ -51,7 +51,8 @@ export default {
     airConditioning,
     alarm,
     TV,
-    diffuser
+    diffuser,
+    airPurifiers
   },
   data () {
     return {

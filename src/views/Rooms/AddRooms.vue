@@ -54,10 +54,7 @@ import deviceAdd from "../Rooms/AddDevice.vue"
 export default {
     name: "RoomsAdd",
     components: {
-        'living-room': livingRoom,
         deviceAdd,
-        kitchen,
-        bedroom
         },
     methods:{
     showMessage: function(){     

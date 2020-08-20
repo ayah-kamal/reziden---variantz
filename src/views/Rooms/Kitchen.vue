@@ -24,6 +24,7 @@
 <lighting/>
 <curtains/>
 <airConditioning/>
+<airPurifier/>
 <CoffeeMachine/>
 <fridge/>
 <microwave/>
@@ -34,6 +35,7 @@
 <dishwasher/>
 <iceMaker/>
 <kitchenHood/>
+
 
  </CRow>
       
@@ -57,6 +59,7 @@ import dishwasher from '../devices/dishwasher'
 import kettle from '../devices/kettle'
 import iceMaker from '../devices/iceMaker'
 import kitchenHood from '../devices/kitchenHood'
+import airPurifier from '../devices/AirPurifier'
 
 
 
@@ -76,7 +79,8 @@ stoveAndOven,
 dishwasher,
 kettle,
 iceMaker,
-kitchenHood,      
+kitchenHood,  
+airPurifier,    
   },
   data () {
     return {

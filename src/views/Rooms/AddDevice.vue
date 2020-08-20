@@ -275,6 +275,14 @@
       <modem/>
       </CCard>
 
+      <CCard>
+          <CCardHeader>
+            <button class = "buttons" id = "btn35"
+            >Add</button>
+            </CCardHeader>
+      <airPurifiers/>
+      </CCard>
+
     </CRow>
 <hr>
     <CButton class="saveBtn" v-on:click="saveChanges()">Save</CButton>
@@ -317,6 +325,7 @@ import  tempretureSensor from "../devices/tempretureSensor"
 import  smokeDetector from "../devices/smokeDetector"
 import  SOS from "../devices/SOS"
 import modem from "../devices/modem"
+import airPurifiers from '../devices/AirPurifier'
 
 
 export default {
@@ -355,6 +364,7 @@ export default {
     soundSystem,
     Dryer,
     modem,
+    airPurifiers,
     },
     mounted(){
   $('.buttons').click(function(){
