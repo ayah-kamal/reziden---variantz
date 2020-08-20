@@ -1,6 +1,6 @@
 <template>
     <CRow class="rowStyle">
-        <CCard>
+        <CCard style="border: none">
           <h4 class = "title">Washing Machine</h4>
 
            <Button  class="optBtn"

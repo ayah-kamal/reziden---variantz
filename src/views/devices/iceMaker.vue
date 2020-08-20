@@ -1,6 +1,6 @@
 <template>
     <CRow class="rowStyle">
-        <CCard>
+        <CCard style="border: none">
           <h4 class = "title">Countertop Ice Maker</h4>
         <img  class = "deviceImage" src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1592862235-31Z-UkaXdfL.jpg?crop=1xw:1.00xh;center,top&resize=768:*" alt="">
   

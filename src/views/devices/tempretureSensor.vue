@@ -1,6 +1,6 @@
 <template>
     <CRow class="rowStyle">
-        <CCard>
+        <CCard style="border: none">
           <h4 class = "title">Temperature Sensor</h4>
         <img  class = "deviceImage" src="tem_sensor.jpg" alt="">
   

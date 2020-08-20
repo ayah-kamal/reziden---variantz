@@ -1,6 +1,6 @@
 <template>
     <CRow class="rowStyle">
-        <CCard>
+        <CCard style="border: none">
           <h4 class = "title">Shower Head</h4>
         <img  class = "deviceImage" src="showerHead.jpg" alt="">
   

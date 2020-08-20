@@ -1,7 +1,7 @@
 <template>
 
       <CRow class="rowStyle">
-        <CCard>
+        <CCard style="border: none">
           <h4 class = "title">Lighting</h4>
           
            <Button  class="optBtn"

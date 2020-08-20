@@ -1,7 +1,7 @@
 <template>
     
 <CRow class="rowStyle">
-        <CCard>
+        <CCard style="border: none">
           <h4 class = "title">Connected Kitchen Scale</h4>
         <img  class = "deviceImage" src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1535141596-drop-scale-1535141590.png?crop=1xw:1xh;center,top&resize=768:*" alt="">
   

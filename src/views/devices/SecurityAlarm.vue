@@ -1,7 +1,7 @@
 <template>
 
     <CRow class="rowStyle">
-        <CCard>
+        <CCard style="border: none">
           <h4 class = "title">Security Alarm</h4>
         <img  class = "deviceImage" src="SecurityAlarm.jpg" alt="">
   

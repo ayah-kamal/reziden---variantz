@@ -1,6 +1,6 @@
 <template>
     <CRow class="rowStyle">
-        <CCard>
+        <CCard style="border: none">
           <h4 class = "title">Diffuser</h4>
         <img  class = "deviceImage" src="https://target.scene7.com/is/image/Target/GUEST_3d04f4d5-fdeb-4456-865f-36e61312757b?wid=488&hei=488&fmt=pjpeg" alt="">
   

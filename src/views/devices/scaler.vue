@@ -1,6 +1,6 @@
 <template>
     <CRow class="rowStyle">
-        <CCard>
+        <CCard style="border: none">
           <h4 class = "title">Scaler</h4>
         <img  class = "deviceImage" src="scalers.jpg" alt="">
   

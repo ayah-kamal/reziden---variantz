@@ -1,7 +1,7 @@
 <template>
     
 <CRow class="rowStyle">
-        <CCard>
+        <CCard style="border: none">
           <h4 class = "title">Toaster</h4>
         <img  class = "deviceImage" src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1591884884-img52o.jpg?crop=1xw:1.00xh;center,top&resize=768:*" alt="">
   

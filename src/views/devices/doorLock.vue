@@ -1,6 +1,6 @@
 <template>
     <CRow class="rowStyle">
-        <CCard>
+        <CCard style="border: none">
           <h4 class = "title">Door Lock</h4>
         <img  class = "deviceImage" src="doorLock.jpg" alt="">
   

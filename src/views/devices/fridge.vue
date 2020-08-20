@@ -1,7 +1,7 @@
 <template>
     
 <CRow class="rowStyle">
-        <CCard>
+        <CCard style="border: none">
           <h4 class = "title">Fridge</h4>
         <img  class = "deviceImage" src="https://images.samsung.com/is/image/samsung/sg-family-hub-rf56n9740sg-rf56n9740sg-ss-frontblack-thumb-107278879" alt="">
   

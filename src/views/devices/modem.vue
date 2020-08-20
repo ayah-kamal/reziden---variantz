@@ -1,7 +1,7 @@
 <template>
     
 <CRow class="rowStyle">
-        <CCard>
+        <CCard style="border: none">
           <h4 class = "title">Modem</h4>
         <img  class = "deviceImage" src="https://media.extra.com/s/aurora/100029997_800/TpLink-AC1200-Wireless-VDSL-ADSL-Modem-Router?locale=en-GB,en-*,*" alt="">
   

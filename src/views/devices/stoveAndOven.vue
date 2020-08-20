@@ -1,7 +1,7 @@
 <template>
     
     <CRow class="rowStyle">
-        <CCard>
+        <CCard style="border: none">
           <h4 class = "title">Electric Stove and Oven</h4>
         <img  class = "deviceImage" src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1535143467-smart-stove-1535143460.png?crop=1xw:1xh;center,top&resize=768:*" alt="">
   

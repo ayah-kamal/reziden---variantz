@@ -1,7 +1,7 @@
 <template>
     
 <CRow class="rowStyle">
-        <CCard>
+        <CCard style="border: none">
           <h4 class = "title">Smart Coffee Machine</h4>
         <img  class = "deviceImage" src="https://media.sprii.ae/media/catalog/product/cache/8d42bf985fec41257dd93cd482e4d041/d/l/dlecam23-260_223785_2.jpeg" alt="">
   

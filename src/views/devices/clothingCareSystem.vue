@@ -1,6 +1,6 @@
 <template>
     <CRow class="rowStyle">
-        <CCard>
+        <CCard style="border: none">
           <h4 class = "title">Clothing Care System</h4>
         <img  class = "deviceImage" src="https://images.costco-static.com/ImageDelivery/imageService?profileId=12026539&itemId=1269958-894&recipeName=680" alt="">
   

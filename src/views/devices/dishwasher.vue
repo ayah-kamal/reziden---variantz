@@ -1,6 +1,6 @@
 <template>
     <CRow class="rowStyle">
-        <CCard>
+        <CCard style="border: none">
           <h4 class = "title">Dishwasher</h4>
         <img  class = "deviceImage" src="https://images.homedepot-static.com/productImages/2b4378e7-843b-4943-abb9-854d03b4efce/svn/stainless-steel-lg-electronics-built-in-dishwashers-ldp6797st-64_1000.jpg" alt="">
   
