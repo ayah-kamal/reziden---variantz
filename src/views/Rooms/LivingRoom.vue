@@ -86,6 +86,7 @@
       <airConditioning/>
       <curtains />
       <TV />
+      <airPurifier/>
       <diffuser />
       <soundSystem />
       <modem/>
@@ -102,6 +103,7 @@ import diffuser from "../devices/diffuser"
 import TV from "../devices/TV"
 import soundSystem from "../devices/soundSystem"
 import modem from '../devices/modem'
+import airPurifier from '../devices/AirPurifier'
 
 export default {
   name: "GuestBedroom",
@@ -112,7 +114,8 @@ export default {
     TV,
     diffuser,
     soundSystem,
-    modem
+    modem,
+    airPurifier
   },
   data () {
     return {

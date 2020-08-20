@@ -111,7 +111,9 @@
     labels="months"
     :options="{ maintainAspectRatio: false }"
   />
-   <h7>Year: 2020</h7>
+   <h7 style="margin-left: 50%; 
+   font-weight: bold">
+     Year: 2020</h7>
   </div>
 
 <div class="monthEnergyContainer">
@@ -135,10 +137,68 @@
 
 </div>
 
-<h4></h4>
+<h4>Enviroment</h4>
 <br>
 
+<div class="enviromentContainer">
 <weatherWidget/>
+
+
+  <div class="roomTempContainer">
+  <CCard class="roomTempWidget">
+    <CCardHeader style="background-color: #FFC63D;
+     text-align: center">
+      <label class="tempLevel">Warm</label><br>
+      <label class="tempNum">24°C</label><br>
+      <label class="tempRoom">Master Bathroom</label>
+      </CCardHeader>
+      <CCardBody>
+        <label>Humidity</label>
+        <label>Dust (PM2.5)</label>
+        <label>Light Intensity</label>
+        <label>Noise</label>
+      </CCardBody>
+    </CCard>
+
+    <CCard class="roomTempWidget">
+    <CCardHeader style="background-color: #5bb2de;
+     text-align: center">
+      <label class="tempLevel">Cool</label><br>
+      <label class="tempNum">19°C</label><br>
+      <label class="tempRoom">Living Room</label>
+      </CCardHeader>
+      <CCardBody>
+
+      </CCardBody>
+    </CCard>
+
+    <CCard class="roomTempWidget">
+    <CCardHeader style="background-color: #5bb2de;
+     text-align: center">
+      <label class="tempLevel">Cool</label><br>
+      <label class="tempNum">20°C</label><br>
+      <label class="tempRoom">Kitchen</label>
+      </CCardHeader>
+      <CCardBody>
+
+      </CCardBody>
+    </CCard>
+
+    <CCard class="roomTempWidget">
+    <CCardHeader style="background-color: #b33532;
+     text-align: center">
+      <label class="tempLevel">Hot</label><br>
+      <label class="tempNum">27°C</label><br>
+      <label class="tempRoom">Laundry Room</label>
+      </CCardHeader>
+      <CCardBody>
+
+      </CCardBody>
+    </CCard>
+</div>
+</div>
+
+
 </div>
 </template>
 
@@ -287,10 +347,48 @@ background-color: #dee8f0;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
   
-  }
-  
+  } 
 }
 
+.tempLevel{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+  }
 
+  .tempNum{
+    color: rgb(65, 65, 65);
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .tempRoom{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+
+  .enviromentContainer{
+  padding: 5px;
+  margin-bottom: 20px; 
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: auto;
+  gap: 2rem;
+  }
+
+  .roomTempContainer{
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 0.5rem;
+  row-gap: 0rem;
+  }
+
+  .roomTempContainer .roomTempWidget{
+  height: 200px;
+}
 
 </style>
