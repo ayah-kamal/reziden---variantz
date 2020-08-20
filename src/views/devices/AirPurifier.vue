@@ -31,15 +31,17 @@
   <button type="radio" class="buttons">Dust</button>
   <button type="radio" class="buttons">Eco</button>
   <button type="radio" class="buttons">Fan</button>
-  <button type="radio" class="buttons">Hot</button>
+  <button type="radio" class="buttons">Auto</button>
 </div>
 
 <hr>
 
+<label class = "editLabel">Timer:</label>
 <div>
-<label class="editLabel">Temperature:</label>
-<input placeholder="24" style="padding-right:20px; text-align:right; width: 50px;margin-left:10px;border: none;border-bottom: 1px solid black">
-<span style="margin-left:-20px;">°C</span>
+<label style="margin-right: 5px">Start</label>
+<input type="time" required>
+<label style="margin-left: 10px; margin-right: 5px">End</label>
+<input type="time" required>
 </div>
 
           </CCard>
