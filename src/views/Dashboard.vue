@@ -152,11 +152,19 @@
       <label class="tempNum">24°C</label><br>
       <label class="tempRoom">Master Bathroom</label>
       </CCardHeader>
-      <CCardBody>
-        <label>Humidity</label>
-        <label>Dust (PM2.5)</label>
-        <label>Light Intensity</label>
-        <label>Noise</label>
+      <CCardBody class="roomEnviromentBody">
+        <label class="roomBodyTitle">Humidity</label>
+        <label>22%</label>
+
+        <label class="roomBodyTitle">Dust</label>
+        <label>Low</label>
+
+        <label class="roomBodyTitle">Light Intensity</label>
+         <label>40lm</label>
+
+        <label class="roomBodyTitle">Noise</label>
+        <label>70dB</label>
+
       </CCardBody>
     </CCard>
 
@@ -167,7 +175,18 @@
       <label class="tempNum">19°C</label><br>
       <label class="tempRoom">Living Room</label>
       </CCardHeader>
-      <CCardBody>
+      <CCardBody class="roomEnviromentBody">
+         <label class="roomBodyTitle">Humidity</label>
+         <label>19%</label>
+
+        <label class="roomBodyTitle">Dust</label>
+        <label>Moderate</label>
+
+        <label class="roomBodyTitle">Light Intensity</label>
+        <label>60lm</label>
+
+        <label class="roomBodyTitle">Noise</label>
+        <label>90dB</label>
 
       </CCardBody>
     </CCard>
@@ -179,7 +198,18 @@
       <label class="tempNum">20°C</label><br>
       <label class="tempRoom">Kitchen</label>
       </CCardHeader>
-      <CCardBody>
+      <CCardBody class="roomEnviromentBody">
+         <label class="roomBodyTitle">Humidity</label>
+         <label>54%</label>
+
+        <label class="roomBodyTitle">Dust</label>
+        <label>High</label>
+
+        <label class="roomBodyTitle">Light Intensity</label>
+        <label>40lm</label>
+
+        <label class="roomBodyTitle">Noise</label>
+        <label>100dB</label>
 
       </CCardBody>
     </CCard>
@@ -191,7 +221,18 @@
       <label class="tempNum">27°C</label><br>
       <label class="tempRoom">Laundry Room</label>
       </CCardHeader>
-      <CCardBody>
+      <CCardBody class="roomEnviromentBody">
+         <label class="roomBodyTitle">Humidity</label>
+         <label>34%</label>
+
+        <label class="roomBodyTitle">Dust</label>
+        <label>Low</label>
+
+        <label class="roomBodyTitle">Light Intensity</label>
+        <label>40lm</label>
+
+        <label class="roomBodyTitle">Noise</label>
+        <label>30dB</label>
 
       </CCardBody>
     </CCard>
@@ -290,13 +331,8 @@ h5{
 }
 
 .overviewContainer{
-  /* display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;*/
   padding: 5px;
   margin-bottom: 20px; 
-
   display: grid;
   grid-template-columns: 8fr 4fr;
   grid-template-rows: auto;
@@ -324,9 +360,6 @@ background-color: #dee8f0;
 
 .monthEnergyContainer{
   margin-top:20px;
-  /* display: flex;
-  flex-flow: column wrap; */
-
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
@@ -383,12 +416,25 @@ background-color: #dee8f0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  gap: 0.5rem;
+  column-gap: 0.5rem;
   row-gap: 0rem;
   }
 
   .roomTempContainer .roomTempWidget{
-  height: 200px;
+  height: 320px;
 }
 
+.roomEnviromentBody{
+display: grid;
+column-gap: 2rem;
+justify-items: start;
+justify-content: space-between;
+grid-template-columns: 1fr 1fr;
+padding: 4px 0 2px 5px;
+
+}
+
+.roomBodyTitle{
+  font-weight: bold;
+}
 </style>
